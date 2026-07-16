@@ -45,18 +45,12 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 
 | File | What it's for |
 |---|---|
-| `index.html` | **This is the live website.** This is the file the public link shows. |
-| `pg-abroad-landing.html` | An identical spare copy of the same page. |
+| `index.html` | **This is the live website** — the whole landing page, and the only file visitors see. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
 
 The whole page is one self-contained file — the logo, the styling and everything
 else is built in. Nothing else needs to be uploaded for it to work.
-
-> **Worth knowing:** `index.html` and `pg-abroad-landing.html` are two copies of the
-> same page. Only `index.html` is what visitors actually see. If you change one and
-> not the other, they'll drift apart. If you'd rather keep just one file, that's an
-> easy tidy-up — just ask.
 
 ## How to make changes
 

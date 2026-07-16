@@ -4,6 +4,13 @@ A plain-English history of this landing page. Newest updates go at the top.
 
 ---
 
+## Version 1.0.1 — July 2026
+
+- Tidy-up: removed the spare duplicate copy of the page, so there is now just one
+  file (`index.html`) to look after. Nothing on the live page changed.
+
+---
+
 ## Version 1.0 — July 2026 · **Live**
 
 The first version of the Medical PG Abroad 1:1 Career Strategy Session landing page,
