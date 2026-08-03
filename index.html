@@ -175,7 +175,7 @@
   .ctile:hover { transform: translateY(-4px); border-color: rgba(209,255,110,0.5); background: #3b3b3b; }
   .ctile .flag { font-size: 1.7rem; line-height: 1; flex: none; }
   .ctile .cn { font-size: 1.02rem; font-weight: 500; color: #fff; white-space: nowrap; }
-  @media (max-width: 460px) { .ctiles { grid-template-columns: 1fr 1fr; } .ctile { padding: 18px 16px; } }
+  @media (max-width: 460px) { .ctiles { grid-template-columns: 1fr; } .ctile { padding: 18px 18px; } }
 
   /* ---------- Cards / grids ---------- */
   .grid { display: grid; gap: 21px; }
@@ -321,6 +321,11 @@
     .card { padding: 26px; }
     .hero-meta .m b { font-size: 1.3rem; }
     .sec-head { margin-bottom: 40px; }
+    .btn { white-space: normal; }
+    .btn-lg { padding: 15px 22px; }
+    .hero-actions, .final-actions { width: 100%; }
+    .hero-actions .btn, .final-actions .btn { flex: 1 1 100%; width: 100%; }
+    h1 { font-size: clamp(2.1rem, 9vw, 2.7rem); }
   }
 </style>
 </head>
