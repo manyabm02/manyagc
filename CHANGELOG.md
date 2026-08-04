@@ -4,6 +4,50 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.2 — July 2026 · Career Strategy page refinements
+
+A batch of review-feedback updates to the **Career Strategy Session** page
+(`index.html`). The New Zealand Handbook page was not affected. All changes are live.
+
+### Mobile fixes
+- Fixed the main complaint — text was appearing tiny on phones because the page was
+  missing the "viewport" setting mobile browsers need. Added it, so the page now sizes
+  correctly on phones and the built-in responsive layout kicks in.
+- Stopped the buy buttons and the "Gulf Countries" tile from running off the edge on
+  narrow phones.
+- Kept the three hero stats (1,100+ · 11 yrs · 9) on a single line on mobile instead of
+  wrapping to a second row.
+
+### The points and wording
+- Trimmed the session card ("Here's What You'll Get") to 5 points, and its floating
+  green tag now reads **"Exclusive Session Benefits"** (was "Free AUS & NZ Handbook").
+- Added a **"1:1 mentoring with a practicing specialist"** point.
+- Removed the **"Free access to one future webinar…"** point from the session card, the
+  post-session report list, and the pricing list.
+- Dropped the word **"Free"** from the "Australia & New Zealand Pathway Handbook" point
+  everywhere it appears.
+- Made the mentoring wording consistent across the session card, pricing box and the
+  "how it works" step.
+
+### Layout
+- "How it works" is now **five steps**: added a **"1:1 Specialist Mentoring"** step. The
+  order ends with the report (step 4) then mentoring (step 5). Fixed the connecting-arrow
+  spacing between the step cards.
+- Reordered **"Who this session is for"** by career stage — Med School → Internship →
+  MBBS graduate → Foreign Medical Graduate → considering specialist → practicing doctor.
+
+### The report preview
+- Replaced the placeholder report graphic with an **actual, view-only preview of the
+  report PDF**. It displays on the page but is **not downloadable** — there's no download
+  button and no PDF file link (the pages are drawn onto the page as images). The pill now
+  reads **"View how your report looks like"**.
+- Swapped in the latest report PDF (5 pages) and made it load only when a visitor scrolls
+  near it, so it doesn't slow the initial page load.
+- Balanced the preview height on desktop so the report card lines up neatly with the
+  checklist beside it.
+
+---
+
 ## Version 1.1 — July 2026 · New page added
 
 Added a **second landing page** to this repository, for the **New Zealand Medical PG

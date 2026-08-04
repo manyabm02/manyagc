@@ -29,10 +29,10 @@ The page is one long scroll. In order, it covers:
 2. **Countries** — the 9 countries we map pathways for
 3. **Why this session is different** — personalised guidance, country comparisons, and who you'll speak to
 4. **Who this session is for** — the types of doctors and students it suits
-5. **How it works** — the four steps, shown as a flow
+5. **How it works** — the five steps, shown as a flow
 6. **The problem** — the confusion this session clears up
 7. **Why doctors trust us** — six reasons
-8. **Your post-session report** — everything included in the report
+8. **Your post-session report** — a view-only preview of the actual report PDF, plus the checklist of what's included
 9. **Inside your report** — a closer look at each part of the report
 10. **What this consultation is not** — our honesty section
 11. **Pricing** — the price and everything included
@@ -48,6 +48,7 @@ The page is one long scroll. In order, it covers:
 | **Booking buttons go to** | https://rzp.io/rzp/GH5iPqt (Razorpay payment page) |
 | **Email shown** | info@goocampus.in |
 | **Address shown** | 138/6, Ground Floor, 10th Main Road, 6th-A Cross, Sadashivanagar, near SBI Bank, Raj Mahal Vilas Extension, Bengaluru, Karnataka 560080 |
+| **Report preview** | The actual report PDF, shown **view-only** (no download button, no file link) |
 
 Every "Book" button on the page — in the top bar, the opening section, the pricing
 box and the closing section — opens the Razorpay payment page in a new tab.
@@ -58,12 +59,13 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 |---|---|
 | `index.html` | The **Career Strategy Session** page — shown at the main link. |
 | `nz-handbook.html` | The **New Zealand Handbook** page — shown at `/nz-handbook.html`. |
+| `report-data.js` | Holds the report PDF used for the **view-only preview** on the Career Strategy page. It loads only when a visitor scrolls down to the report section. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
 
-Each page is one self-contained file — the logo, the styling and everything else is
-built in. Nothing else needs to be uploaded for them to work. Editing one page never
-affects the other.
+The two pages are independent — editing one never affects the other. The logo and
+styling are built into each page. The one extra piece is `report-data.js`, which the
+Career Strategy page uses for its report preview.
 
 ## How to make changes
 
@@ -76,8 +78,9 @@ There's no build step and no publishing button to press.
 
 ## How to view it without the internet
 
-Download `index.html` and double-click it. It opens in any browser and looks exactly
-the same, because everything it needs is inside that one file.
+Download `index.html` and double-click it — the whole page opens in any browser. The
+one part that needs the internet is the report preview (it uses an online PDF viewer),
+so that section may be blank offline; everything else looks exactly the same.
 
 ---
 
