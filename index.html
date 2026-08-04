@@ -248,9 +248,7 @@
   .pdf-view { max-height: 440px; overflow-y: auto; overflow-x: hidden; border-radius: 10px; background: #2a2a2a; padding: 10px; display: flex; flex-direction: column; gap: 10px; user-select: none; -webkit-user-select: none; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.25) transparent; }
   .pdf-view::-webkit-scrollbar { width: 8px; }
   .pdf-view::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.22); border-radius: 8px; }
-  .pdf-view canvas { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.45); pointer-events: none; }
-  .pdf-view .pdf-page { position: relative; width: 100%; background: #333; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.45); }
-  .pdf-view .pdf-page canvas { box-shadow: none; border-radius: 0; }
+  .pdf-view canvas { width: 100%; height: auto; display: block; border-radius: 3px; pointer-events: none; }
   .pdf-view .pdf-loading { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-align: center; padding: 40px 0; }
   @media (min-width: 901px) { .pdf-view { max-height: 300px; } }
   .rv-seal { margin-top: 22px; display: inline-flex; align-items: center; gap: 9px; font-size: 0.82rem; font-weight: 600; color: var(--lime); background: rgba(209,255,110,0.12); padding: 9px 15px; border-radius: 100px; }
@@ -714,7 +712,7 @@
   })();
 </script>
 
-<!-- Post-session report preview (view-only; lazy-loaded data + lazy-rendered pages) -->
+<!-- Post-session report preview (view-only) -->
 <script>
   (function () {
     var view = document.getElementById('pdfView');
@@ -739,32 +737,18 @@
       pdfjsLib.getDocument({ data: bytes }).promise.then(function (pdf) {
         view.innerHTML = '';
         var scale = (window.devicePixelRatio && window.devicePixelRatio > 1) ? 2 : 1.5;
-        var rendered = {};
-        pdf.getPage(1).then(function (p1) {
-          var vp = p1.getViewport({ scale: 1 });
-          for (var n = 1; n <= pdf.numPages; n++) {
-            var ph = document.createElement('div');
-            ph.className = 'pdf-page';
-            ph.setAttribute('data-page', n);
-            ph.style.aspectRatio = vp.width + ' / ' + vp.height;
-            view.appendChild(ph);
-          }
-          var io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) {
-              if (!e.isIntersecting) return;
-              var ph = e.target, n = +ph.getAttribute('data-page');
-              if (rendered[n]) return; rendered[n] = true;
-              pdf.getPage(n).then(function (page) {
-                var vp2 = page.getViewport({ scale: scale });
-                var canvas = document.createElement('canvas');
-                canvas.width = vp2.width; canvas.height = vp2.height;
-                ph.appendChild(canvas);
-                page.render({ canvasContext: canvas.getContext('2d'), viewport: vp2 });
-              });
-            });
-          }, { root: view, rootMargin: '500px 0px' });
-          view.querySelectorAll('.pdf-page').forEach(function (ph) { io.observe(ph); });
-        });
+        var chain = Promise.resolve();
+        var render = function (n) {
+          return pdf.getPage(n).then(function (page) {
+            var vp = page.getViewport({ scale: scale });
+            var canvas = document.createElement('canvas');
+            canvas.width = vp.width; canvas.height = vp.height;
+            view.appendChild(canvas);
+            return page.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise;
+          });
+        };
+        for (var n = 1; n <= pdf.numPages; n++) { (function (n) { chain = chain.then(function () { return render(n); }); })(n); }
+        return chain;
       }).catch(fail);
     }
     if ('IntersectionObserver' in window) {
