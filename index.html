@@ -325,7 +325,9 @@
     body { font-size: 16px; }
     .wrap { padding-inline: 18px; }
     .card { padding: 26px; }
-    .hero-meta { flex-wrap: nowrap; gap: 13px; }
+    .hero-badge { font-size: 0.66rem; }
+    .hero-badge span:last-child { white-space: nowrap; }
+    .hero-meta { flex-wrap: nowrap; gap: 13px; justify-content: center; }
     .hero-meta .m b { font-size: 1.2rem; }
     .hero-meta .m span { font-size: 0.76rem; white-space: nowrap; }
     .hero-meta .div { align-self: stretch; }
@@ -334,6 +336,7 @@
     .btn-lg { padding: 15px 22px; }
     .hero-actions, .final-actions { width: 100%; }
     .hero-actions .btn, .final-actions .btn { flex: 1 1 100%; width: 100%; }
+    .price-body .btn { white-space: nowrap; font-size: 0.85rem; padding: 14px 16px; }
     h1 { font-size: clamp(2.1rem, 9vw, 2.7rem); }
   }
 </style>

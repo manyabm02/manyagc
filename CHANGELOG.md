@@ -4,6 +4,20 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.2.1 — July 2026 · Netlify deploy + mobile polish
+
+- **Also deployed to Netlify.** The site is now live at
+  **https://goocampus-medical-pg.netlify.app** as well as GitHub Pages. It's connected to
+  this repo, so pushes auto-deploy to both. (The `goocampusevents.com` domain was left
+  untouched — it's a separate site in a different repo.)
+- **Mobile tidy-ups on the Career Strategy page:**
+  - The opening badge ("Personalised strategy with our Chief Counsellor") now stays on
+    one line on phones instead of wrapping.
+  - The stats row (1,100+ · 11 yrs · 9) is now centred on phones.
+  - The pricing "Book Your Career Strategy Session" button now stays on one line on phones.
+
+---
+
 ## Version 1.2 — July 2026 · Career Strategy page refinements
 
 A batch of review-feedback updates to the **Career Strategy Session** page

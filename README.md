@@ -10,6 +10,10 @@ and its own separate web address. They are not connected to each other.
 | **1:1 Career Strategy Session** | **https://manyabm02.github.io/manyagc/** |
 | **New Zealand Medical PG Pathway Handbook** | **https://manyabm02.github.io/manyagc/nz-handbook.html** |
 
+The site is also live on **Netlify** (auto-deploys from this repo):
+- Career Strategy Session — https://goocampus-medical-pg.netlify.app/
+- NZ Handbook — https://goocampus-medical-pg.netlify.app/nz-handbook.html
+
 Anyone with these links can open them, on phone or laptop. They're public.
 
 ---
