@@ -9,6 +9,9 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 - Changed the point **"1:1 mentoring with a practicing specialist"** to
   **"Mentoring session by a practicing specialist"** in both places it appears — the hero
   session card and the pricing list.
+- Aligned the "How it works" mentoring step to match: title is now **"Mentoring Session by
+  a Specialist"** (was "1:1 Specialist Mentoring"), and the "1:1" was dropped from its
+  description.
 
 ---
 
