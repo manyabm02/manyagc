@@ -4,6 +4,14 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.2.2 — July 2026 · Wording
+
+- Changed the point **"1:1 mentoring with a practicing specialist"** to
+  **"Mentoring session by a practicing specialist"** in both places it appears — the hero
+  session card and the pricing list.
+
+---
+
 ## Version 1.2.1 — July 2026 · Netlify deploy + mobile polish
 
 - **Also deployed to Netlify.** The site is now live at
