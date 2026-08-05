@@ -15,6 +15,8 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
     one line on phones instead of wrapping.
   - The stats row (1,100+ · 11 yrs · 9) is now centred on phones.
   - The pricing "Book Your Career Strategy Session" button now stays on one line on phones.
+  - The hero headline ("Stop Guessing Your Medical PG Abroad.") now shows on two lines on
+    phones instead of three.
 
 ---
 
