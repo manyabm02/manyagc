@@ -9,10 +9,12 @@ and its own separate web address. They are not connected to each other.
 |---|---|
 | **1:1 Career Strategy Session** | **https://manyabm02.github.io/manyagc/** |
 | **New Zealand Medical PG Pathway Handbook** | **https://manyabm02.github.io/manyagc/nz-handbook.html** |
+| **Gulf (GCC) Medical Licensing Programme** — *draft* | **https://manyabm02.github.io/manyagc/gcc-landing.html** |
 
 The site is also live on **Netlify** (auto-deploys from this repo):
 - Career Strategy Session — https://goocampus-medical-pg.netlify.app/
 - NZ Handbook — https://goocampus-medical-pg.netlify.app/nz-handbook.html
+- Gulf (GCC) Programme — https://goocampus-medical-pg.netlify.app/gcc-landing.html
 
 Anyone with these links can open them, on phone or laptop. They're public.
 
@@ -63,11 +65,12 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 |---|---|
 | `index.html` | The **Career Strategy Session** page — shown at the main link. |
 | `nz-handbook.html` | The **New Zealand Handbook** page — shown at `/nz-handbook.html`. |
+| `gcc-landing.html` | The **Gulf (GCC) Programme** page — shown at `/gcc-landing.html`. Still a draft. |
 | `report-data.js` | Holds the report PDF used for the **view-only preview** on the Career Strategy page. It loads only when a visitor scrolls down to the report section. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
 
-The two pages are independent — editing one never affects the other. The logo and
+The pages are independent — editing one never affects the others. The logo and
 styling are built into each page. The one extra piece is `report-data.js`, which the
 Career Strategy page uses for its report preview.
 
@@ -129,3 +132,67 @@ New Zealand.
 2. **The price needs confirming.** The original content showed **₹699 (77% OFF)** at the
    top and middle, but **₹999 (67% OFF)** at the very bottom. Those can't both be right,
    so ₹699 is used everywhere for now.
+
+---
+
+# Page 3 — Gulf (GCC) Medical Licensing Programme
+
+**⚠️ This page is a draft.** It is still being reviewed and is not finished — see
+"What this page still needs" at the bottom of this section.
+
+The landing page for doctors who want to practise in the Gulf, covering the licensing
+pathway for whichever GCC country and authority they are targeting.
+
+**Live at:** https://manyabm02.github.io/manyagc/gcc-landing.html
+**File:** `gcc-landing.html`
+
+## What's on the page
+
+1. **Top banner** — offers the free GCC brochure
+2. **Opening section** — the headline over a photo, with the brochure button
+3. **Who We Are** — what GooCampus does, with a photo
+4. **Why Doctors Are Choosing the Gulf** — the six reasons
+5. **Where You Can Practice** — all 8 authorities and the country each covers
+6. **Your Journey to the Gulf** — the seven steps, from enrolment to relocation
+7. **What's Included** — the five service tracks, as cards
+8. **What Sets Us Apart** — the five differences
+9. **Everything You Need, In One Program** — the six things covered
+10. **We Only Work With Serious Professionals** — how candidates are selected, and the three steps
+11. **What Our Doctors Say** — five reviews
+12. **Closing section + footer** — final call to action, offices, phone and email
+
+## The key details on the page
+
+| | |
+|---|---|
+| **Authorities covered** | DHA (Dubai), DOH (Abu Dhabi), MOHAP (Northern Emirates), SHA (Sharjah), SCFHS (Saudi Arabia), QCHP (Qatar), NHRA (Bahrain), MOH (Kuwait) |
+| **Buttons go to** | Nowhere yet — see below |
+| **Phone shown** | 080-41743956 |
+| **Email shown** | info@goocampus.in |
+| **Offices shown** | United Arab Emirates (head office) and Bengaluru |
+
+## About the look
+
+This page follows a different design from the other two — it was built to match a
+business-consulting template the design was based on. Cream and navy sections
+alternate, section headings sit on the far left with the content beside them, and the
+service cards step left and right down the navy section rather than sitting in a grid.
+Text lifts into view as you scroll.
+
+The photos are AI-generated. **They should be looked at before this page is shown
+publicly.**
+
+## ⚠️ What this page still needs
+
+1. **The brochure buttons don't go anywhere yet.** Every "Download Free Brochure"
+   button just scrolls down the page. Send the brochure file or a form link and it
+   takes a minute to wire up.
+
+2. **Three sections say much the same thing.** "What Sets Us Apart", "What's Included"
+   and "Everything You Need, In One Program" all cover the same six services.
+   "Everything You Need" adds nothing new and could be removed.
+
+3. **There are no numbers on the page.** No doctors placed, pass rate or years running.
+   If those figures exist they would strengthen it.
+
+4. **The reviews have no source.** Names only, no photos or verification.

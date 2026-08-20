@@ -4,6 +4,25 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.3 — August 2026 · New Gulf (GCC) landing page
+
+- **Added a third landing page — the Gulf (GCC) Medical Licensing Programme**
+  (`gcc-landing.html`), live at `/gcc-landing.html` on both GitHub Pages and Netlify.
+  The other two pages were not touched.
+- The page covers all 8 GCC authorities (DHA, DOH, MOHAP, SHA, SCFHS, QCHP, NHRA and
+  Kuwait MOH), the seven-step journey, the five service tracks and five reviews.
+- **It is a draft.** The "Download Free Brochure" buttons don't go anywhere yet, three
+  sections repeat the same six services, and the photos are AI-generated and need a
+  look before this goes out publicly. The README lists all of it.
+- Built to match a business-consulting template rather than the styling of the other
+  two pages, so it looks deliberately different: cream and navy sections, headings on
+  the far left, service cards stepping left and right, and text that lifts into view
+  as you scroll.
+- Included the **viewport setting** from the start, so it sizes correctly on phones —
+  the problem that had to be fixed on the Career Strategy page in version 1.2.
+
+---
+
 ## Version 1.2.2 — July 2026 · Wording
 
 - Changed the point **"1:1 mentoring with a practicing specialist"** to
