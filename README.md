@@ -10,11 +10,13 @@ and its own separate web address. They are not connected to each other.
 | **1:1 Career Strategy Session** | **https://manyabm02.github.io/manyagc/** |
 | **New Zealand Medical PG Pathway Handbook** | **https://manyabm02.github.io/manyagc/nz-handbook.html** |
 | **Gulf (GCC) Medical Licensing Programme** — *draft* | **https://manyabm02.github.io/manyagc/gcc-landing.html** |
+| **Samvaya Matrimony** — *draft* | **https://manyabm02.github.io/manyagc/samvaya.html** |
 
 The site is also live on **Netlify** (auto-deploys from this repo):
 - Career Strategy Session — https://goocampus-medical-pg.netlify.app/
 - NZ Handbook — https://goocampus-medical-pg.netlify.app/nz-handbook.html
 - Gulf (GCC) Programme — https://goocampus-medical-pg.netlify.app/gcc-landing.html
+- Samvaya Matrimony — https://goocampus-medical-pg.netlify.app/samvaya.html
 
 Anyone with these links can open them, on phone or laptop. They're public.
 
@@ -66,6 +68,7 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 | `index.html` | The **Career Strategy Session** page — shown at the main link. |
 | `nz-handbook.html` | The **New Zealand Handbook** page — shown at `/nz-handbook.html`. |
 | `gcc-landing.html` | The **Gulf (GCC) Programme** page — shown at `/gcc-landing.html`. Still a draft. |
+| `samvaya.html` | The **Samvaya Matrimony** page — shown at `/samvaya.html`. Still a draft. |
 | `report-data.js` | Holds the report PDF used for the **view-only preview** on the Career Strategy page. It loads only when a visitor scrolls down to the report section. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
@@ -196,3 +199,59 @@ publicly.**
    If those figures exist they would strengthen it.
 
 4. **The reviews have no source.** Names only, no photos or verification.
+
+---
+
+# Page 4 — Samvaya Matrimony
+
+**⚠️ This page is a draft.** The photos on it are placeholders — see "What this page
+still needs" at the bottom of this section.
+
+The landing page for **Samvaya**, GooCampus's invite-only, hand-curated matchmaking
+service for working professionals — verified profiles, curated introductions and
+privacy, built on GooCampus's years of guiding professionals through their careers.
+
+**Live at:** https://manyabm02.github.io/manyagc/samvaya.html
+**File:** `samvaya.html`
+
+## What's on the page
+
+1. **Opening section** — the couple photo, the Samvaya name ("Made with ❤️ by
+   GooCampus"), the headline "Matrimonial Matchmaking", and the "Join Waitlist" button
+2. **"Samvaya means coming together"** — the opening line: no swiping, no fake profiles
+3. **Why Samvaya is different** — the four points (verified profiles, career alignment,
+   curated introductions, privacy-first)
+4. **Your field, or beyond it** — you can choose a partner from your own field or beyond
+5. **Built for professionals** — the six reasons it's made for people with demanding careers
+6. **Samvaya vs generic platforms** — a five-row comparison
+7. **How love will find your way** — the five steps, shown as a flow
+8. **Private, hosted video introductions** — how the first meeting works
+9. **About Samvaya** — the GooCampus story and the numbers
+10. **Closing section + footer** — final call to action, email and links
+
+## The key details on the page
+
+| | |
+|---|---|
+| **Audience** | Working professionals (doctors, engineers, lawyers, CAs — any field) |
+| **"Join Waitlist" buttons go to** | https://apply.samvayamatrimony.com (opens in a new tab) |
+| **Email shown** | hello@samvayamatrimony.com |
+| **Numbers shown** | 50,000+ guided · 4.9/5 rating · 15+ years · 6 continents · 100+ partners |
+
+## About the look
+
+A soft, romantic and elegant design — a warm ivory background, an oxblood-wine accent
+with a little antique gold, an elegant serif for the headings, delicate floral
+flourishes under each section, and a gentle zoom on the hero photo. It is deliberately
+different from the medical pages. On phones the couple photo fills the screen with a
+compact card below it; on laptops the couple sits on the right with the text card on
+the left.
+
+## ⚠️ What this page still needs
+
+1. **The three photos are placeholders.** The hero couple, the "beyond your field"
+   sunset couple, and the video-call image are stock/AI images embedded for now. They
+   **should be replaced with licensed or brand photos** before this is shown publicly.
+
+2. **The waitlist link needs confirming.** Every "Join Waitlist" button points to
+   `apply.samvayamatrimony.com` — check that address is live and correct.

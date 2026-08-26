@@ -4,6 +4,31 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.4 — August 2026 · New Samvaya Matrimony landing page
+
+- **Added a fourth landing page — Samvaya Matrimony** (`samvaya.html`), live at
+  `/samvaya.html` on both GitHub Pages and Netlify. The other three pages were not
+  touched — this is a brand-new, separate file.
+- Samvaya is GooCampus's invite-only, hand-curated matchmaking service for working
+  professionals. The page covers: the hero (couple photo, the Samvaya name, "Join
+  Waitlist"), the "coming together" opening line, why Samvaya is different (4 points),
+  choosing a partner from your field or beyond it, why it's built for professionals
+  (6 points), a Samvaya-vs-generic-platforms comparison, the five-step "how it works"
+  flow, the private hosted-video introductions, the About/GooCampus story with the
+  numbers, and the closing call to action.
+- The "Join Waitlist" buttons open **apply.samvayamatrimony.com** in a new tab; the
+  contact email shown is **hello@samvayamatrimony.com**.
+- A soft, romantic, elegant look — warm ivory background, an oxblood-wine accent, a
+  little antique gold, an elegant serif for the headings, delicate floral flourishes,
+  and a gentle zoom on the hero photo. Deliberately different from the medical pages.
+- Built mobile-first: on phones the couple photo fills the screen with a compact card
+  below it; on laptops the couple sits to the right with the text card on the left.
+- **It is a draft.** The three photos on the page (the hero couple, the "beyond your
+  field" sunset couple, and the video-call image) are **placeholder stock images and
+  should be replaced with licensed/brand photos** before this goes out publicly.
+
+---
+
 ## Version 1.3 — August 2026 · New Gulf (GCC) landing page
 
 - **Added a third landing page — the Gulf (GCC) Medical Licensing Programme**
