@@ -29,6 +29,30 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.4 — August 2026 · Samvaya page — photos, layout and florals
+
+Changes to the **Samvaya Matrimony** page (`samvaya.html`). The other three pages
+were not touched.
+
+- **Opening section rebuilt.** The couple photo and the text no longer sit in two
+  separate halves with a hard line between them. The couple stays on the right, and the
+  same photo now fades softly across behind the words. The box around the text — its
+  border, rounded corners and panel background — is gone.
+- **"Your field, or beyond it" and "Meet through private, hosted video"** — both photos
+  now run from the very left edge of the screen instead of sitting inside an arch-shaped
+  frame, and each fades into a soft version of itself behind the text beside it.
+- **Removed one comparison.** The **Understanding** row ("You, Not Your Job Title" vs
+  "Same Old Filters") has gone from the Samvaya vs generic platforms table. The other
+  four comparisons are unchanged.
+- **Added flowery detailing.** Two new hand-drawn botanical marks — a small sprig and a
+  rose spray — now sit quietly in the empty corners of six sections, in the same gold
+  and rose as the rest of the page. They're deliberately faint and spread out rather
+  than filling the page.
+- **On phones**, the opening photo is now a band across the top with the words below it.
+  Previously the text sat on top of the photo and was hard to read.
+
+---
+
 ## Version 1.3 — August 2026 · New Gulf (GCC) landing page
 
 - **Added a third landing page — the Gulf (GCC) Medical Licensing Programme**
