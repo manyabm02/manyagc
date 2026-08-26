@@ -29,6 +29,20 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.4.1 — August 2026 · Samvaya heart colour and the meaning line
+
+- **The heart in "Made with ❤️ by GooCampus"** (opening section) is now the same deep
+  wine as the word **Samvaya** above it. It was a standard emoji before, which always
+  renders bright red and couldn't be recoloured, so it's been redrawn as a small shape
+  that takes its colour from the page. It will now always match the brand colour.
+- **"Samvaya means coming together" is now the romantic centrepiece it should be.**
+  "Samvaya means" sits small and quiet above, and **coming together** is much larger in
+  italic wine underneath. A pair of matching flowering branches frames the phrase on
+  both sides, and the small divider below it has been replaced with a wider, more
+  ornate one with a rose at its centre.
+
+---
+
 ## Version 1.4 — August 2026 · Samvaya page — photos, layout and florals
 
 Changes to the **Samvaya Matrimony** page (`samvaya.html`). The other three pages
