@@ -29,6 +29,26 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.5 — August 2026 · Samvaya photo framing, garland and spacing
+
+- **A garland now encircles "Samvaya means coming together".** The scattered flower
+  sprays that sat around that section have been removed. In their place is a single
+  oval garland of leaves and roses drawn in the deep wine brand colour, wrapping the
+  words themselves.
+- **"Samvaya is different" now sits higher** — the large empty gap above it has been
+  closed up.
+- **The photos no longer wash over anyone's face.** On the opening section, the soft
+  fade now finishes before the couple, so both faces are completely clear. The same fix
+  has been applied to the sunset photo and the video-call photo.
+- **The sunset couple and their bouquet have moved further left**, so the text beside
+  them sits on clean background and reads sharply.
+- **The video-call photo is shorter and better framed.** The section is no longer taller
+  than the others, the photo has moved left, and **the woman on the laptop screen has
+  been brightened** so her face is clearly visible.
+- All of the above was checked on phone screens as well as desktop.
+
+---
+
 ## Version 1.4.1 — August 2026 · Samvaya heart colour and the meaning line
 
 - **The heart in "Made with ❤️ by GooCampus"** (opening section) is now the same deep
