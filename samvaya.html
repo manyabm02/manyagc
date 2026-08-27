@@ -102,8 +102,10 @@
   .hero-sharp { position: absolute; inset: 0; width: 100%; z-index: 1; }
   /* Held toward the right so the couple survive the side-crop on tall, narrow windows;
      on wide ones the crop is vertical and the horizontal figure has no effect. */
-  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%; }
-  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.06); } }
+  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%; transform-origin: 68% 50%; animation: kenburns 22s ease-in-out infinite alternate; will-change: transform; }
+  /* slow drift in and back out again; the origin sits on the couple so they stay put
+     while the extended edges do the moving */
+  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.045); } }
   @media (prefers-reduced-motion: reduce) { .hero-sharp img { animation: none; } }
   /* The ivory wash that keeps the copy readable. It is held back from the top-right
      band, where the couple's faces always sit, and kept at full strength down the left
@@ -113,7 +115,7 @@
      last words fall past it onto his sherwani, which is pale and plain enough to read
      against. His body carries on under the copy as a soft dissolve — no bands or
      windows needed now that the photo is no longer enlarged. */
-  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, rgba(243,236,226,0.94) 0%, rgba(243,236,226,0.93) 26%, rgba(243,236,226,0.90) 42%, rgba(243,236,226,0.81) 51%, rgba(243,236,226,0.55) 56%, rgba(243,236,226,0.24) 59%, transparent 61.5%); }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, rgba(243,236,226,0.95) 0%, rgba(243,236,226,0.94) 34%, rgba(243,236,226,0.925) 47%, rgba(243,236,226,0.89) 53%, rgba(243,236,226,0.76) 56%, rgba(243,236,226,0.52) 58%, rgba(243,236,226,0.28) 59.5%, rgba(243,236,226,0.10) 61%, rgba(243,236,226,0.03) 62.5%, transparent 64%); }
   .hero-in { position: relative; z-index: 3; }
   .hero-panel { max-width: 520px; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
   .hero-brand { padding-bottom: 15px; margin-bottom: 16px; border-bottom: 1px solid rgba(180,146,78,0.3); }
