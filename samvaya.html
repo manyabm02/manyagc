@@ -115,7 +115,7 @@
      last words fall past it onto his sherwani, which is pale and plain enough to read
      against. His body carries on under the copy as a soft dissolve — no bands or
      windows needed now that the photo is no longer enlarged. */
-  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, rgba(243,236,226,0.95) 0%, rgba(243,236,226,0.94) 34%, rgba(243,236,226,0.925) 47%, rgba(243,236,226,0.89) 53%, rgba(243,236,226,0.76) 56%, rgba(243,236,226,0.52) 58%, rgba(243,236,226,0.28) 59.5%, rgba(243,236,226,0.10) 61%, rgba(243,236,226,0.03) 62.5%, transparent 64%); }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, rgba(237,228,214,0.85) 0%, rgba(237,228,214,0.84) 34%, rgba(237,228,214,0.82) 47%, rgba(237,228,214,0.78) 53%, rgba(237,228,214,0.66) 56%, rgba(237,228,214,0.45) 58%, rgba(237,228,214,0.24) 59.5%, rgba(237,228,214,0.09) 61%, rgba(237,228,214,0.03) 62.5%, transparent 64%); }
   .hero-in { position: relative; z-index: 3; }
   .hero-panel { max-width: 520px; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
   .hero-brand { padding-bottom: 15px; margin-bottom: 16px; border-bottom: 1px solid rgba(180,146,78,0.3); }
@@ -127,7 +127,10 @@
   .hero h1 { color: var(--ink); font-size: clamp(2.3rem, 4.4vw, 3.4rem); font-weight: 600; line-height: 1.05; margin-top: 16px; }
   .hero h1 em { color: var(--wine); display: block; }
   .hero .sub { color: var(--wine); font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 2.2vw, 1.5rem); margin-top: 10px; }
-  .hero .lede { color: var(--prose); font-size: 0.96rem; line-height: 1.72; margin-top: 14px; }
+  /* a shade deeper than the page's usual body colour, only here: it lets the tint
+     behind it sit lower without the line going faint. Same warm family, so it reads
+     as the same text, just settled into the softer background. */
+  .hero .lede { color: #574c44; font-size: 0.96rem; line-height: 1.72; margin-top: 14px; }
   .hero .lede b { color: var(--ink); font-weight: 500; }
   .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 22px; }
   .hero-meta { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(180,146,78,0.3); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
