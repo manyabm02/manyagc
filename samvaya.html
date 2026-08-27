@@ -117,9 +117,12 @@
      windows needed now that the photo is no longer enlarged. */
   .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, rgba(237,228,214,0.85) 0%, rgba(237,228,214,0.84) 34%, rgba(237,228,214,0.82) 47%, rgba(237,228,214,0.78) 53%, rgba(237,228,214,0.66) 56%, rgba(237,228,214,0.45) 58%, rgba(237,228,214,0.24) 59.5%, rgba(237,228,214,0.09) 61%, rgba(237,228,214,0.03) 62.5%, transparent 64%); }
   .hero-in { position: relative; z-index: 3; }
-  .hero-panel { max-width: 520px; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
+  /* On wide screens the centred wrap pushed the copy right until the longest line ran
+     onto the groom's sleeve. This walks it back left, growing with the window and
+     capped, and staying at zero on narrower screens where the wrap is already flush. */
+  .hero-panel { max-width: 520px; margin-left: calc(-1 * clamp(0px, (100vw - 1100px) * 0.13, 110px)); background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
   .hero-brand { padding-bottom: 15px; margin-bottom: 16px; border-bottom: 1px solid rgba(180,146,78,0.3); }
-  .hero-brand .bn { font-family: var(--serif); font-weight: 600; font-size: 2.1rem; color: var(--wine); line-height: 1; }
+  .hero-brand .bn { font-family: var(--serif); font-weight: 600; font-size: 2.75rem; color: var(--wine); line-height: 1; }
   .hero-brand .bm { display: flex; align-items: center; gap: 6px; margin-top: 7px; font-size: 0.74rem; letter-spacing: 0.02em; color: var(--prose); }
   .hero-brand .bm b { color: var(--ink); font-weight: 500; }
   .hrt { width: 14px; height: 14px; color: var(--wine); flex: none; }
@@ -150,7 +153,7 @@
     .hero-panel { max-width: 100%; background: none; padding: 0; }
     .hero h1 { font-size: 2.05rem; margin-top: 10px; }
     .hero-brand { padding-bottom: 11px; margin-bottom: 11px; }
-    .hero-brand .bn { font-size: 1.75rem; }
+    .hero-brand .bn { font-size: 2.2rem; }
     .hero-cta { margin-top: 18px; }
     .hero .lede { font-size: 0.92rem; }
   }
