@@ -205,6 +205,10 @@
      faces so neither of them is veiled */
   .bleed.light .bleed-media::after { background: linear-gradient(to right, transparent 0%, transparent 46%, var(--sec-bg) 86%); background: linear-gradient(to right, transparent 0%, transparent 46%, color-mix(in srgb, var(--sec-bg) 74%, transparent) 62%, color-mix(in srgb, var(--sec-bg) 92%, transparent) 74%, var(--sec-bg) 90%); -webkit-mask-image: radial-gradient(ellipse 13% 16% at 58% 6%, transparent 0%, transparent 38%, #000 100%); mask-image: radial-gradient(ellipse 13% 16% at 58% 6%, transparent 0%, transparent 38%, #000 100%); }
   .bleed.light .bleed-media img { object-position: 46% 46%; }
+  /* the couple and the bouquet reached across into the copy column, so the whole
+     picture is nudged left. Same size, same crop, same fade — only its position moves,
+     and what leaves the frame on the left is open water. */
+  .bleed.light .bleed-media { left: -6%; }
   .bleed-in { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px,5vw,66px); align-items: center; min-height: clamp(430px, 46vw, 610px); }
   .bleed-copy { grid-column: 2; }
   .bleed-copy h2 { font-size: clamp(2rem,3.6vw,2.8rem); font-weight: 600; margin: 10px 0 8px; }
@@ -213,7 +217,8 @@
   .bleed-copy p { color: var(--prose); font-size: 1.02rem; }
   .bleed-copy p .ik { color: var(--ink); font-weight: 500; }
   @media (max-width: 900px) {
-    .bleed-media { position: relative; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(240px, 44vw, 340px); }
+    /* the nudge is a desktop-only fix — on phones the photo is a full-width band */
+    .bleed-media, .bleed.light .bleed-media { position: relative; left: 0; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(240px, 44vw, 340px); }
     /* the face window is a desktop-only device — the phone fade runs downward, clear of faces */
     .bleed-media::after, .bleed.light .bleed-media::after { background: linear-gradient(to bottom, transparent 34%, var(--sec-bg) 100%); -webkit-mask-image: none; mask-image: none; }
     .bleed.light .bleed-media img { object-position: 50% 42%; }
