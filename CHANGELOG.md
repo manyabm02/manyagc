@@ -22,9 +22,10 @@ the gap between where the writing ends and where the people begin:
 
   The photograph is now **wider and carries on behind the writing**, the way the other
   two photos do, so there is no edge and no partition — it simply softens away into the
-  page. The ivory tint that keeps the writing readable stays where the writing is, and a
-  soft oval lifts it off his face. He reads clearly, the bride is untouched, and the
-  words are as readable as before.
+  page. The ivory tint that keeps the writing readable is now held back from the top of
+  the picture, where the faces are, and kept at full strength down the left column,
+  where the writing sits. He reads as clearly as the bride does, and the words are as
+  readable as before.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.

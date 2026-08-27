@@ -252,10 +252,11 @@ of the screen and dissolve into the page behind the text beside them; neither si
 frame.
 
 On all three, the fade is kept **off the faces**, and none of them stops at a visible
-edge — each photograph carries on behind the writing and softens away into the page. On
-the opening photo and the sunset couple, where the people and the writing sit in the
-same part of the screen, a soft oval window lifts the ivory tint off their faces while
-it still backs the words.
+edge — each photograph carries on behind the writing and softens away into the page.
+On the opening photo the ivory tint is held back from the top of the picture, where the
+faces are, and kept at full strength down the left column where the writing sits. On the
+sunset couple a soft oval window does the same job. In both cases the tint still backs
+the words.
 
 **The flowers.** Two hand-drawn botanical marks — a small sprig and a rose spray — sit
 quietly in the empty corners of six sections, plus a pair of flowering branches either

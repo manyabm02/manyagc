@@ -93,13 +93,19 @@
      straight down his face and reads as a partition. Instead the photo is wide and
      the fade is long and gradual — it carries on behind the copy — while a soft
      oval window holds his face at full strength. Two mask layers, unioned. */
-  .hero-sharp { position: absolute; top: 0; right: 0; bottom: 0; width: 62%; z-index: 1; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 5%); mask-image: linear-gradient(to right, transparent 0%, #000 5%); }
+  .hero-sharp { position: absolute; top: 0; right: 0; bottom: 0; width: 62%; z-index: 1; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 3%); mask-image: linear-gradient(to right, transparent 0%, #000 3%); }
   .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 20%; transform-origin: 70% 30%; animation: kenburns 16s ease-in-out infinite alternate; will-change: transform; }
   @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.06); } }
   @media (prefers-reduced-motion: reduce) { .hero-sharp img { animation: none; } }
-  /* the ivory wash that keeps the copy readable, with the same oval lifted out of it
-     so it never veils his face */
-  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, var(--ivory) 0%, rgba(251,246,238,0.97) 24%, rgba(251,246,238,0.93) 40%, rgba(251,246,238,0.86) 52%, rgba(251,246,238,0.62) 61%, rgba(251,246,238,0.26) 67%, transparent 73%); -webkit-mask-image: radial-gradient(ellipse 15% 18% at 54% 17%, transparent 0%, transparent 60%, #000 100%); mask-image: radial-gradient(ellipse 15% 18% at 54% 17%, transparent 0%, transparent 60%, #000 100%); }
+  /* The ivory wash that keeps the copy readable. It is held back from the top-right
+     band, where the couple's faces always sit, and kept at full strength down the left
+     column, where the copy sits and there is no photograph behind it. Two mask bands,
+     unioned — bands rather than a shape, so they track the layout and not the crop. */
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, var(--ivory) 0%, rgba(251,246,238,0.97) 24%, rgba(251,246,238,0.93) 40%, rgba(251,246,238,0.86) 52%, rgba(251,246,238,0.62) 61%, rgba(251,246,238,0.26) 67%, transparent 73%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, #000 56%), linear-gradient(to right, #000 0%, #000 30%, transparent 39%);
+    -webkit-mask-composite: source-over;
+    mask-image: linear-gradient(to bottom, transparent 0%, transparent 42%, #000 56%), linear-gradient(to right, #000 0%, #000 30%, transparent 39%);
+    mask-composite: add; }
   .hero-in { position: relative; z-index: 3; }
   .hero-panel { max-width: 520px; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
   .hero-brand { padding-bottom: 15px; margin-bottom: 16px; border-bottom: 1px solid rgba(180,146,78,0.3); }
