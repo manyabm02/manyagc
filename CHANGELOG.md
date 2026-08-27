@@ -24,12 +24,21 @@ the gap between where the writing ends and where the people begin:
      softens away into flat ivory.
   2. **The ivory tint was reaching his face.** It now stops well before him.
 
-  The photograph itself **runs from the right edge across to the left and carries on
-  behind the writing**, exactly like the other two photos, dissolving gently instead of
-  stopping at an edge. The tint that makes the writing readable is kept where the
-  writing actually is — down the left column and along the lower band — and is held off
-  the upper part of the picture, where the faces are. Nothing is cropped or cut: he is
-  now as clear and as sharp as she is.
+  The photograph is now **full screen across the whole opening section** — edge to edge,
+  not a half on the right. The tint that makes the writing readable is kept where the
+  writing actually is: down the left column, and along the lower band beneath the
+  couple. Nothing is cropped or cut.
+
+  **⚠️ One caveat, and it matters.** The picture is a **tall, portrait photograph**. To
+  fill a wide screen edge to edge it has to be enlarged a long way and the top and bottom
+  are cut off — and the wider the window, the more extreme this gets. On a normal laptop
+  it looks right. On a **wide screen it becomes a very close crop**, and at that size the
+  groom's face spreads across the middle of the section, which is where the writing sits
+  — so the tint crosses his face again. **A landscape (wide) version of this photograph
+  would fix it completely.** These photos are placeholders anyway and need replacing
+  before launch, so a wide crop is worth asking for. Failing that, the previous
+  treatment — the photo running most of the width rather than all of it — keeps both
+  faces clear at every screen size.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.

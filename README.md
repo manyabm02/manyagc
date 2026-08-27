@@ -245,11 +245,10 @@ with a little antique gold, an elegant serif for the headings, delicate floral
 flourishes under each section, and a gentle zoom on the opening photo. It is
 deliberately different from the medical pages.
 
-**The photos.** The opening photo has no box or panel over it — the couple sits on the
-right and the photograph runs across to the left, behind the words, dissolving into the
-page with no dividing line. The "beyond your field" and "hosted video" photos both run
-off the very left edge of the screen and dissolve into the page behind the text beside
-them; neither sits in a frame.
+**The photos.** The opening photo is **full screen** — it fills the whole opening
+section, edge to edge, with the words sitting over it. The "beyond your field" and
+"hosted video" photos both run off the very left edge of the screen and dissolve into
+the page behind the text beside them; neither sits in a frame.
 
 On all three, the fade is kept **off the faces**, and none of them stops at a visible
 edge. On the opening photo the ivory tint is kept where the writing actually is — the
@@ -276,6 +275,11 @@ the couple sits on the right with the words to the left.
 1. **The three photos are placeholders.** The hero couple, the "beyond your field"
    sunset couple, and the video-call image are stock/AI images embedded for now. They
    **should be replaced with licensed or brand photos** before this is shown publicly.
+
+   When replacing the opening photo, ask for a **landscape (wide) crop**. The current one
+   is portrait, and filling a full-screen opening section with a tall photo forces a very
+   close crop on wide monitors — close enough that the groom's face lands where the
+   writing sits. A wide photo removes the problem entirely.
 
 2. **The waitlist link needs confirming.** Every "Join Waitlist" button points to
    `apply.samvayamatrimony.com` — check that address is live and correct.
