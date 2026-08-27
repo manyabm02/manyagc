@@ -96,24 +96,24 @@
      straight down his face and reads as a partition. Instead the photo is wide and
      the fade is long and gradual — it carries on behind the copy — while a soft
      oval window holds his face at full strength. Two mask layers, unioned. */
-  .hero-sharp { position: absolute; top: 0; right: 0; bottom: 0; width: 100%; z-index: 1; }
-  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 20%; transform-origin: 70% 30%; animation: kenburns 16s ease-in-out infinite alternate; will-change: transform; }
+  .hero-sharp { position: absolute; top: 0; right: 0; bottom: 0; width: 46%; z-index: 1; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%); mask-image: linear-gradient(to right, transparent 0%, #000 8%); }
+  /* Kept near the photograph's own proportions so it is barely cropped — the joined
+     hands, the ring and the bangles all stay in frame. Filling the width instead
+     enlarged a tall photo until only the faces were left. The framing sits a little
+     above centre so the hands stay in view as the window widens, and the ken-burns
+     zoom is gone because it cropped another 6% away. */
+  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
   @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.06); } }
   @media (prefers-reduced-motion: reduce) { .hero-sharp img { animation: none; } }
   /* The ivory wash that keeps the copy readable. It is held back from the top-right
      band, where the couple's faces always sit, and kept at full strength down the left
      column, where the copy sits and there is no photograph behind it. Two mask bands,
      unioned — bands rather than a shape, so they track the layout and not the crop. */
-  /* The photograph is full-bleed, so the tint has to be surgical. In the groom's
-     vertical band all the copy ends by ~25% across, and his face begins at ~29% — so
-     the tint is kept to the left column there. The lede and buttons sit below his face,
-     so the tint returns full-width across the lower band. Two bands, unioned; his face
-     falls in the one place neither covers. */
-  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, var(--ivory) 0%, rgba(251,246,238,0.97) 24%, rgba(251,246,238,0.93) 40%, rgba(251,246,238,0.86) 52%, rgba(251,246,238,0.62) 61%, rgba(251,246,238,0.26) 67%, transparent 73%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 48%, #000 58%), linear-gradient(to right, #000 0%, #000 26%, transparent 32%);
-    -webkit-mask-composite: source-over;
-    mask-image: linear-gradient(to bottom, transparent 0%, transparent 48%, #000 58%), linear-gradient(to right, #000 0%, #000 26%, transparent 32%);
-    mask-composite: add; }
+  /* The tint clears before the groom's face (~57%) so nothing veils him. The lede's
+     last words fall past it onto his sherwani, which is pale and plain enough to read
+     against. His body carries on under the copy as a soft dissolve — no bands or
+     windows needed now that the photo is no longer enlarged. */
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(94deg, var(--ivory) 0%, rgba(251,246,238,0.97) 26%, rgba(251,246,238,0.93) 40%, rgba(251,246,238,0.85) 47%, rgba(251,246,238,0.60) 51%, rgba(251,246,238,0.25) 54%, transparent 57%); }
   .hero-in { position: relative; z-index: 3; }
   .hero-panel { max-width: 520px; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
   .hero-brand { padding-bottom: 15px; margin-bottom: 16px; border-bottom: 1px solid rgba(180,146,78,0.3); }

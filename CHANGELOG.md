@@ -24,21 +24,21 @@ the gap between where the writing ends and where the people begin:
      softens away into flat ivory.
   2. **The ivory tint was reaching his face.** It now stops well before him.
 
-  The photograph is now **full screen across the whole opening section** — edge to edge,
-  not a half on the right. The tint that makes the writing readable is kept where the
-  writing actually is: down the left column, and along the lower band beneath the
-  couple. Nothing is cropped or cut.
+  The photograph is also **no longer being enlarged and cropped**, which was the real
+  problem all along. It had been stretched to fill the width, and because it is a tall
+  portrait picture that meant blowing it up until only the heads and shoulders were left
+  — **the joined hands, the ring and the bangles were all cut away**, which is the whole
+  point of the photograph on a matrimony page. The picture is now sized close to its own
+  proportions, so the couple appear smaller and **the ring and the bangles are back in
+  view**. His body carries on under the writing as a soft dissolve, and the tint clears
+  before his face.
 
-  **⚠️ One caveat, and it matters.** The picture is a **tall, portrait photograph**. To
-  fill a wide screen edge to edge it has to be enlarged a long way and the top and bottom
-  are cut off — and the wider the window, the more extreme this gets. On a normal laptop
-  it looks right. On a **wide screen it becomes a very close crop**, and at that size the
-  groom's face spreads across the middle of the section, which is where the writing sits
-  — so the tint crosses his face again. **A landscape (wide) version of this photograph
-  would fix it completely.** These photos are placeholders anyway and need replacing
-  before launch, so a wide crop is worth asking for. Failing that, the previous
-  treatment — the photo running most of the width rather than all of it — keeps both
-  faces clear at every screen size.
+  **⚠️ Worth knowing.** The picture is a **tall, portrait photograph**, so it cannot both
+  show the whole couple and stretch across a wide screen — the two pull against each
+  other. It now sits across roughly the right half, which keeps everything visible. **A
+  landscape (wide) version of this photograph would let it fill the section and still
+  show the hands and the ring.** These photos are placeholders and need replacing before
+  launch anyway, so a wide crop is worth asking for.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.

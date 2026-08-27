@@ -245,10 +245,11 @@ with a little antique gold, an elegant serif for the headings, delicate floral
 flourishes under each section, and a gentle zoom on the opening photo. It is
 deliberately different from the medical pages.
 
-**The photos.** The opening photo is **full screen** — it fills the whole opening
-section, edge to edge, with the words sitting over it. The "beyond your field" and
-"hosted video" photos both run off the very left edge of the screen and dissolve into
-the page behind the text beside them; neither sits in a frame.
+**The photos.** The opening photo runs down the right of the opening section at close to
+its own proportions, so the whole picture shows — both faces, the joined hands, the ring
+and the bangles. The groom's side carries on underneath the words as a soft dissolve.
+The "beyond your field" and "hosted video" photos both run off the very left edge of the
+screen and dissolve into the page behind the text beside them; neither sits in a frame.
 
 On all three, the fade is kept **off the faces**, and none of them stops at a visible
 edge. On the opening photo the ivory tint is kept where the writing actually is — the
@@ -277,9 +278,10 @@ the couple sits on the right with the words to the left.
    **should be replaced with licensed or brand photos** before this is shown publicly.
 
    When replacing the opening photo, ask for a **landscape (wide) crop**. The current one
-   is portrait, and filling a full-screen opening section with a tall photo forces a very
-   close crop on wide monitors — close enough that the groom's face lands where the
-   writing sits. A wide photo removes the problem entirely.
+   is portrait, which is why it sits across roughly the right half rather than filling
+   the section: stretching a tall photo across a wide screen would enlarge it until the
+   hands, the ring and the bangles were cut away. A wide photo could fill the whole
+   section and still show all of it.
 
 2. **The waitlist link needs confirming.** Every "Join Waitlist" button points to
    `apply.samvayamatrimony.com` — check that address is live and correct.
