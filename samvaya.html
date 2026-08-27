@@ -212,6 +212,12 @@
      picture is nudged left. Same size, same crop, same fade — only its position moves,
      and what leaves the frame on the left is open water. */
   .bleed.light .bleed-media { left: -6%; }
+  /* hosted-video section: the copy sat centred, which dropped the pill row onto the
+     laptop screen. Extra bottom margin lifts the whole block clear of it. */
+  .bleed:not(.light) .bleed-copy { margin-top: -70px; margin-bottom: 70px; }
+  /* and the wash was sitting right over her face on that screen — an oval window
+     lifts it off so she reads again */
+  .bleed:not(.light) .bleed-media::after { -webkit-mask-image: radial-gradient(ellipse 11% 15% at 67% 85%, transparent 0%, transparent 55%, #000 100%); mask-image: radial-gradient(ellipse 11% 15% at 67% 85%, transparent 0%, transparent 55%, #000 100%); }
   .bleed-in { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px,5vw,66px); align-items: center; min-height: clamp(430px, 46vw, 610px); }
   .bleed-copy { grid-column: 2; }
   .bleed-copy h2 { font-size: clamp(2rem,3.6vw,2.8rem); font-weight: 600; margin: 10px 0 8px; }
@@ -223,7 +229,8 @@
     /* the nudge is a desktop-only fix — on phones the photo is a full-width band */
     .bleed-media, .bleed.light .bleed-media { position: relative; left: 0; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(240px, 44vw, 340px); }
     /* the face window is a desktop-only device — the phone fade runs downward, clear of faces */
-    .bleed-media::after, .bleed.light .bleed-media::after { background: linear-gradient(to bottom, transparent 34%, var(--sec-bg) 100%); -webkit-mask-image: none; mask-image: none; }
+    .bleed-media::after, .bleed.light .bleed-media::after, .bleed:not(.light) .bleed-media::after { background: linear-gradient(to bottom, transparent 34%, var(--sec-bg) 100%); -webkit-mask-image: none; mask-image: none; }
+    .bleed:not(.light) .bleed-copy { margin-top: 0; margin-bottom: 0; }
     .bleed.light .bleed-media img { object-position: 50% 42%; }
     .bleed-in { grid-template-columns: 1fr; min-height: 0; padding-top: clamp(18px,4vw,30px); }
     .bleed-copy { grid-column: 1; }
