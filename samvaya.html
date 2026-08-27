@@ -102,10 +102,10 @@
   .hero-sharp { position: absolute; inset: 0; width: 100%; z-index: 1; }
   /* Held toward the right so the couple survive the side-crop on tall, narrow windows;
      on wide ones the crop is vertical and the horizontal figure has no effect. */
-  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%; transform-origin: 68% 50%; animation: kenburns 22s ease-in-out infinite alternate; will-change: transform; }
+  .hero-sharp img { width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%; transform-origin: 68% 50%; animation: kenburns 16s ease-in-out infinite alternate; will-change: transform; }
   /* slow drift in and back out again; the origin sits on the couple so they stay put
      while the extended edges do the moving */
-  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.045); } }
+  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.10); } }
   @media (prefers-reduced-motion: reduce) { .hero-sharp img { animation: none; } }
   /* The ivory wash that keeps the copy readable. It is held back from the top-right
      band, where the couple's faces always sit, and kept at full strength down the left
