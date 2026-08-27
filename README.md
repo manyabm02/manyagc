@@ -251,10 +251,11 @@ line. The "beyond your field" and "hosted video" photos both run off the very le
 of the screen and dissolve into the page behind the text beside them; neither sits in a
 frame.
 
-On all three, the fade is kept **off the faces** — it starts in the gap between where
-the writing ends and where the people begin, so nobody looks veiled. On the sunset
-couple, where the writing and the couple sit closest together, a soft oval window lifts
-the fade away from their heads while still backing the text.
+On all three, the fade is kept **off the faces**, and none of them stops at a visible
+edge — each photograph carries on behind the writing and softens away into the page. On
+the opening photo and the sunset couple, where the people and the writing sit in the
+same part of the screen, a soft oval window lifts the ivory tint off their faces while
+it still backs the words.
 
 **The flowers.** Two hand-drawn botanical marks — a small sprig and a rose spray — sit
 quietly in the empty corners of six sections, plus a pair of flowering branches either

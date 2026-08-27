@@ -14,9 +14,17 @@ photo had almost disappeared into the background.
 The fades are all still there and still soft. They now simply start further along, in
 the gap between where the writing ends and where the people begin:
 
-- **Opening photo (the couple).** The fade now finishes before the man's face rather
-  than running right across it. Both faces are fully clear, and the writing on the left
-  is as readable as it was.
+- **Opening photo (the couple).** This one needed rebuilding rather than adjusting. The
+  man stands at the very left edge of the photograph, so any fade starting at the edge
+  of the picture landed straight on him — and a short fade simply turned into a visible
+  dividing line down the middle of his face, with the couple on one side and the writing
+  on the other.
+
+  The photograph is now **wider and carries on behind the writing**, the way the other
+  two photos do, so there is no edge and no partition — it simply softens away into the
+  page. The ivory tint that keeps the writing readable stays where the writing is, and a
+  soft oval lifts it off his face. He reads clearly, the bride is untouched, and the
+  words are as readable as before.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.
