@@ -246,17 +246,20 @@ flourishes under each section, and a gentle zoom on the opening photo. It is
 deliberately different from the medical pages.
 
 **The photos.** The opening photo has no box or panel over it — the couple sits on the
-right and the same photograph fades softly across behind the words, with no dividing
-line. The "beyond your field" and "hosted video" photos both run off the very left edge
-of the screen and dissolve into the page behind the text beside them; neither sits in a
-frame.
+right and the photograph runs across to the left, behind the words, dissolving into the
+page with no dividing line. The "beyond your field" and "hosted video" photos both run
+off the very left edge of the screen and dissolve into the page behind the text beside
+them; neither sits in a frame.
 
 On all three, the fade is kept **off the faces**, and none of them stops at a visible
-edge — each photograph carries on behind the writing and softens away into the page.
-On the opening photo the ivory tint is held back from the top of the picture, where the
-faces are, and kept at full strength down the left column where the writing sits. On the
-sunset couple a soft oval window does the same job. In both cases the tint still backs
-the words.
+edge. On the opening photo the ivory tint is kept where the writing actually is — the
+left column and the lower band — and held off the upper part of the picture where the
+faces are. On the sunset couple a soft oval window does the same job. In both cases the
+tint still backs the words.
+
+The opening section has **no blurred backdrop**. It used to sit a blurred, enlarged copy
+of the same photograph behind everything, which put a hazy second groom beside the sharp
+one; the photo now softens into flat ivory instead.
 
 **The flowers.** Two hand-drawn botanical marks — a small sprig and a rose spray — sit
 quietly in the empty corners of six sections, plus a pair of flowering branches either

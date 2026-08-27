@@ -14,18 +14,22 @@ photo had almost disappeared into the background.
 The fades are all still there and still soft. They now simply start further along, in
 the gap between where the writing ends and where the people begin:
 
-- **Opening photo (the couple).** This one needed rebuilding rather than adjusting. The
-  man stands at the very left edge of the photograph, so any fade starting at the edge
-  of the picture landed straight on him — and a short fade simply turned into a visible
-  dividing line down the middle of his face, with the couple on one side and the writing
-  on the other.
+- **Opening photo (the couple).** This one needed rebuilding rather than adjusting.
+  Two separate things were making the groom look blurred while the bride stayed sharp:
 
-  The photograph is now **wider and carries on behind the writing**, the way the other
-  two photos do, so there is no edge and no partition — it simply softens away into the
-  page. The ivory tint that keeps the writing readable is now held back from the top of
-  the picture, where the faces are, and kept at full strength down the left column,
-  where the writing sits. He reads as clearly as the bride does, and the words are as
-  readable as before.
+  1. **There was a second, out-of-focus copy of him on the page.** A blurred, enlarged
+     copy of the same photograph was being used as a backdrop behind the whole opening
+     section, and it sat immediately to the left of the real one — so you saw a hazy
+     man beside the sharp man. That backdrop is **gone**. The photograph now simply
+     softens away into flat ivory.
+  2. **The ivory tint was reaching his face.** It now stops well before him.
+
+  The photograph itself **runs from the right edge across to the left and carries on
+  behind the writing**, exactly like the other two photos, dissolving gently instead of
+  stopping at an edge. The tint that makes the writing readable is kept where the
+  writing actually is — down the left column and along the lower band — and is held off
+  the upper part of the picture, where the faces are. Nothing is cropped or cut: he is
+  now as clear and as sharp as she is.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.
