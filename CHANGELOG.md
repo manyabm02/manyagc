@@ -4,6 +4,30 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.8 — August 2026 · Kept the soft fades off everyone's faces
+
+On the **Samvaya** page, all three photos fade into the page behind the words. On each
+one the fade was starting too early and drifting across a face, which left people
+looking veiled — the man in the opening photo most of all, and the bride in the sunset
+photo had almost disappeared into the background.
+
+The fades are all still there and still soft. They now simply start further along, in
+the gap between where the writing ends and where the people begin:
+
+- **Opening photo (the couple).** The fade now finishes before the man's face rather
+  than running right across it. Both faces are fully clear, and the writing on the left
+  is as readable as it was.
+- **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
+  writing, but a soft oval window now lifts it away from the couple's heads. The bride
+  is visible again instead of dissolving into the page.
+- **"Meet through private, hosted video".** The fade begins further right, so it no
+  longer creeps onto the man's cheek and jaw.
+
+**On phones** nothing changes — there the photos fade downwards, which was never over
+anyone's face. The other three pages were not touched.
+
+---
+
 ## Version 1.7 — August 2026 · Reverted the photo-framing and garland changes
 
 The photo-framing and garland changes have been **undone at your request**. The Samvaya
