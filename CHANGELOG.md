@@ -24,21 +24,30 @@ the gap between where the writing ends and where the people begin:
      softens away into flat ivory.
   2. **The ivory tint was reaching his face.** It now stops well before him.
 
-  The photograph is also **no longer being enlarged and cropped**, which was the real
-  problem all along. It had been stretched to fill the width, and because it is a tall
-  portrait picture that meant blowing it up until only the heads and shoulders were left
-  — **the joined hands, the ring and the bangles were all cut away**, which is the whole
-  point of the photograph on a matrimony page. The picture is now sized close to its own
-  proportions, so the couple appear smaller and **the ring and the bangles are back in
-  view**. His body carries on under the writing as a soft dissolve, and the tint clears
-  before his face.
+  **The photograph itself has been widened.** It was a tall, upright picture, and a tall
+  picture cannot fill a wide screen without being blown up until the top and bottom fall
+  away — which is exactly why **the joined hands, the ring and the bangles kept
+  disappearing**, and why the groom's head was running off the top of the screen.
 
-  **⚠️ Worth knowing.** The picture is a **tall, portrait photograph**, so it cannot both
-  show the whole couple and stretch across a wide screen — the two pull against each
-  other. It now sits across roughly the right half, which keeps everything visible. **A
-  landscape (wide) version of this photograph would let it fill the section and still
-  show the hands and the ring.** These photos are placeholders and need replacing before
-  launch anyway, so a wide crop is worth asking for.
+  So the picture was rebuilt as a wide one. The groom's left-hand side — his arm, his
+  sherwani and the wall behind him — has been **extended outwards to match**, turning the
+  original upright photograph into a wide one (1800 × 997). Nothing of the original was
+  cut away; new canvas was added to it.
+
+  What that gives you:
+
+  - The photograph now **fills the whole opening section, edge to edge**, at its natural
+    size — it is not being enlarged at all
+  - **The couple sit to the right**, in the empty half where there is no writing, so their
+    faces are the highlight
+  - **The joined hands, the ring and the bangles are all clearly in view**
+  - The groom's extended side **runs on to the left, behind the writing**, the way a
+    background should
+  - Nobody's head runs off the top any more
+
+  The section's height is now tied to its width, so it never becomes taller than the
+  picture's own shape — otherwise the sides would be cropped away again on narrow
+  windows. On phones the band is framed on the couple rather than the extended wall.
 - **"Your field, or beyond it" (the sunset couple).** The fade still sits behind the
   writing, but a soft oval window now lifts it away from the couple's heads. The bride
   is visible again instead of dissolving into the page.
