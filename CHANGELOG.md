@@ -4,6 +4,61 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.7 — August 2026 · Reverted the photo-framing and garland changes
+
+The photo-framing and garland changes have been **undone at your request**. The Samvaya
+page is back exactly as it was in version 1.6.
+
+That means these are no longer on the page:
+
+- the oval garland around "Samvaya means coming together" (the two side branches and the
+  corner sprays are back instead)
+- the shorter video-call section, and the brightened laptop screen
+- the photo repositioning that kept the fades off the faces
+- the tightened gap above "Samvaya is different"
+
+Nothing else on the page changed, and the other three pages were never affected.
+
+---
+
+## Version 1.6 — August 2026 · Samvaya heart colour and the meaning line
+
+- **The heart in "Made with ❤️ by GooCampus"** (opening section) is now the same deep
+  wine as the word **Samvaya** above it. It was a standard emoji before, which always
+  renders bright red and couldn't be recoloured, so it's been redrawn as a small shape
+  that takes its colour from the page. It will now always match the brand colour.
+- **"Samvaya means coming together" is now the romantic centrepiece it should be.**
+  "Samvaya means" sits small and quiet above, and **coming together** is much larger in
+  italic wine underneath. A pair of matching flowering branches frames the phrase on
+  both sides, and the small divider below it has been replaced with a wider, more
+  ornate one with a rose at its centre.
+
+---
+
+## Version 1.5 — August 2026 · Samvaya page — photos, layout and florals
+
+Changes to the **Samvaya Matrimony** page (`samvaya.html`). The other three pages
+were not touched.
+
+- **Opening section rebuilt.** The couple photo and the text no longer sit in two
+  separate halves with a hard line between them. The couple stays on the right, and the
+  same photo now fades softly across behind the words. The box around the text — its
+  border, rounded corners and panel background — is gone.
+- **"Your field, or beyond it" and "Meet through private, hosted video"** — both photos
+  now run from the very left edge of the screen instead of sitting inside an arch-shaped
+  frame, and each fades into a soft version of itself behind the text beside it.
+- **Removed one comparison.** The **Understanding** row ("You, Not Your Job Title" vs
+  "Same Old Filters") has gone from the Samvaya vs generic platforms table. The other
+  four comparisons are unchanged.
+- **Added flowery detailing.** Two new hand-drawn botanical marks — a small sprig and a
+  rose spray — now sit quietly in the empty corners of six sections, in the same gold
+  and rose as the rest of the page. They're deliberately faint and spread out rather
+  than filling the page.
+- **On phones**, the opening photo is now a band across the top with the words below it.
+  Previously the text sat on top of the photo and was hard to read.
+
+---
+
 ## Version 1.4 — August 2026 · New Samvaya Matrimony landing page
 
 - **Added a fourth landing page — Samvaya Matrimony** (`samvaya.html`), live at
@@ -26,61 +81,6 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 - **It is a draft.** The three photos on the page (the hero couple, the "beyond your
   field" sunset couple, and the video-call image) are **placeholder stock images and
   should be replaced with licensed/brand photos** before this goes out publicly.
-
----
-
-## Version 1.5.1 — August 2026 · Reverted the Samvaya v1.5 changes
-
-Version 1.5 has been **undone at your request**. The Samvaya page is back exactly as it
-was in version 1.4.1.
-
-That means these are no longer on the page:
-
-- the oval garland around "Samvaya means coming together" (the two side branches and the
-  corner sprays are back instead)
-- the shorter video-call section, and the brightened laptop screen
-- the photo repositioning that kept the fades off the faces
-- the tightened gap above "Samvaya is different"
-
-Nothing else on the page changed, and the other three pages were never affected.
-
----
-
-## Version 1.4.1 — August 2026 · Samvaya heart colour and the meaning line
-
-- **The heart in "Made with ❤️ by GooCampus"** (opening section) is now the same deep
-  wine as the word **Samvaya** above it. It was a standard emoji before, which always
-  renders bright red and couldn't be recoloured, so it's been redrawn as a small shape
-  that takes its colour from the page. It will now always match the brand colour.
-- **"Samvaya means coming together" is now the romantic centrepiece it should be.**
-  "Samvaya means" sits small and quiet above, and **coming together** is much larger in
-  italic wine underneath. A pair of matching flowering branches frames the phrase on
-  both sides, and the small divider below it has been replaced with a wider, more
-  ornate one with a rose at its centre.
-
----
-
-## Version 1.4 — August 2026 · Samvaya page — photos, layout and florals
-
-Changes to the **Samvaya Matrimony** page (`samvaya.html`). The other three pages
-were not touched.
-
-- **Opening section rebuilt.** The couple photo and the text no longer sit in two
-  separate halves with a hard line between them. The couple stays on the right, and the
-  same photo now fades softly across behind the words. The box around the text — its
-  border, rounded corners and panel background — is gone.
-- **"Your field, or beyond it" and "Meet through private, hosted video"** — both photos
-  now run from the very left edge of the screen instead of sitting inside an arch-shaped
-  frame, and each fades into a soft version of itself behind the text beside it.
-- **Removed one comparison.** The **Understanding** row ("You, Not Your Job Title" vs
-  "Same Old Filters") has gone from the Samvaya vs generic platforms table. The other
-  four comparisons are unchanged.
-- **Added flowery detailing.** Two new hand-drawn botanical marks — a small sprig and a
-  rose spray — now sit quietly in the empty corners of six sections, in the same gold
-  and rose as the rest of the page. They're deliberately faint and spread out rather
-  than filling the page.
-- **On phones**, the opening photo is now a band across the top with the words below it.
-  Previously the text sat on top of the photo and was hard to read.
 
 ---
 
@@ -293,3 +293,6 @@ now published at **https://manyabm02.github.io/manyagc/**
 
 Any change saved to this repository goes live automatically within about a minute.
 Each future update will be added to the top of this file.
+
+---
+

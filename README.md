@@ -242,10 +242,24 @@ privacy, built on GooCampus's years of guiding professionals through their caree
 
 A soft, romantic and elegant design — a warm ivory background, an oxblood-wine accent
 with a little antique gold, an elegant serif for the headings, delicate floral
-flourishes under each section, and a gentle zoom on the hero photo. It is deliberately
-different from the medical pages. On phones the couple photo fills the screen with a
-compact card below it; on laptops the couple sits on the right with the text card on
-the left.
+flourishes under each section, and a gentle zoom on the opening photo. It is
+deliberately different from the medical pages.
+
+**The photos.** The opening photo has no box or panel over it — the couple sits on the
+right and the same photograph fades softly across behind the words, with no dividing
+line. The "beyond your field" and "hosted video" photos both run off the very left edge
+of the screen and dissolve into the page behind the text beside them; neither sits in a
+frame.
+
+**The flowers.** Two hand-drawn botanical marks — a small sprig and a rose spray — sit
+quietly in the empty corners of six sections, plus a pair of flowering branches either
+side of "Samvaya means coming together". They are faint and deliberately spread out.
+The heart in "Made with ❤️ by GooCampus" is drawn in the same wine as the Samvaya
+wordmark above it, not the standard emoji.
+
+**On phones** the opening photo becomes a band across the top with the words below it,
+and the other two photos become full-width bands that fade into the page. On laptops
+the couple sits on the right with the words to the left.
 
 ## ⚠️ What this page still needs
 
