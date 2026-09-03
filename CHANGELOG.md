@@ -4,6 +4,26 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.10 — September 2026 · The five steps, side by side
+
+**"How love will find your way" is being trialled as a horizontal row** — the five
+icons in a line with dashed curves running between them, and the wording underneath
+each, rather than the stacked cards. This is a trial: say the word and it goes back.
+
+Every step is now held to **three lines of text**, with real spacing between the
+columns so it is comfortable to read rather than a block of type. The row uses more of
+the screen width than the rest of the page to make that possible.
+
+On screens narrower than about 1280px the **original stacked layout still runs** — five
+columns simply cannot hold three lines each below that width, so the stacked version is
+the better read there.
+
+**Step five now has a heartbeat.** The heart gives two quick pulses and then rests, the
+way a real heartbeat falls, with a soft ring travelling outwards on the first beat. It
+is deliberately unhurried, and it stops for anyone whose device is set to reduce motion.
+
+---
+
 ## Version 1.9 — August 2026 · The Samvaya brand fonts
 
 The **Samvaya** page now uses the brand typefaces:

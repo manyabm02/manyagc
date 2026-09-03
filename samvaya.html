@@ -266,6 +266,28 @@
   .conn .cline { display: block; width: 100%; height: 100%; }
   .conn path.dash { stroke: var(--gold); stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-dasharray: 1 10; opacity: 0.75; }
   .conn path.head { stroke: var(--gold); stroke-width: 2.2; fill: none; stroke-linecap: round; opacity: 0.85; }
+
+  /* Step five — the heart beats. Two quick pulses and a rest, the way a real heartbeat
+     falls, with a soft ring travelling out behind it on the first beat. Long pause
+     between cycles so it draws the eye without nagging. */
+  .fstep:last-child .icoc { position: relative; }
+  .fstep:last-child .icoc svg { transform-origin: 50% 56%; animation: heartbeat 2.6s ease-in-out infinite; will-change: transform; }
+  .fstep:last-child .icoc::after { content: ""; position: absolute; inset: -1px; border-radius: 50%; border: 1px solid var(--rose); opacity: 0; animation: heartring 2.6s ease-out infinite; pointer-events: none; }
+  @keyframes heartbeat {
+    0%, 30%, 100% { transform: scale(1); }
+    7%  { transform: scale(1.19); }
+    14% { transform: scale(1); }
+    21% { transform: scale(1.10); }
+  }
+  @keyframes heartring {
+    0%   { transform: scale(1); opacity: 0.5; }
+    38%  { transform: scale(1.42); opacity: 0; }
+    100% { transform: scale(1.42); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fstep:last-child .icoc svg { animation: none; }
+    .fstep:last-child .icoc::after { display: none; }
+  }
   @media (max-width: 760px) {
     .fstep { justify-content: center; margin-bottom: 60px; }
     .fstep.l, .fstep.r { justify-content: center; }
