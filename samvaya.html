@@ -279,16 +279,23 @@
      curves between them, label and copy beneath each. Purely an override of the
      zigzag above — the markup is untouched, so removing this block restores the
      original stacked layout exactly. Applies on wide screens only; below 861px the
-     stacked version still runs, since five columns will not fit. ---- */
-  @media (min-width: 861px) {
-    .flow { max-width: 1120px; display: grid; grid-template-columns: repeat(5, 1fr); align-items: start; gap: 0; }
-    .fstep { display: block; margin: 0; padding-inline: 8px; text-align: center; }
+     stacked version still runs, since five columns will not fit. Threshold is 1280px:
+     below it the columns fall under ~37 characters a line and the copy spills to four
+     lines, so the stacked layout is the better read. ---- */
+  @media (min-width: 1280px) {
+    /* the row breaks out of the standard 1140px wrap: five columns of readable width
+       plus real gaps between them need more room than the rest of the page uses */
+    .flow-sec .wrap { max-width: min(1440px, 100%); }
+    .flow { --fgap: 34px; max-width: 100%; display: grid; grid-template-columns: repeat(5, 1fr); align-items: start; gap: var(--fgap); }
+    .fstep { display: block; margin: 0; padding-inline: 0; text-align: center; }
     .fcard { width: auto; background: none; border: 0; box-shadow: none; padding: 0; position: static; }
-    .fcard .icoc { position: static; margin: 0 auto 18px; }
-    .fcard .st { display: block; margin-bottom: 5px; }
-    .fcard h3 { font-size: 1.1rem; margin: 0 0 8px; }
-    .fcard p { font-size: 0.85rem; line-height: 1.7; }
-    .conn { position: absolute; top: 18px; bottom: auto; left: calc(50% + 40px); width: calc(100% - 80px); height: 40px; transform: none; z-index: 1; background: no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M2 10 C 36 38, 84 38, 118 10' fill='none' stroke='%23B4924E' stroke-width='2.2' stroke-linecap='round' stroke-dasharray='1 9' opacity='0.75'/%3E%3C/svg%3E"); }
+    .fcard .icoc { position: static; margin: 0 auto 22px; }
+    .fcard .st { display: block; margin-bottom: 7px; }
+    .fcard h3 { font-size: 1.12rem; margin: 0 0 10px; }
+    /* sized against the viewport so the line length stays near 37 characters as the
+       window narrows — that is what keeps every step to three lines rather than four */
+    .fcard p { font-size: clamp(0.77rem, 0.9vw, 0.86rem); line-height: 1.78; }
+    .conn { position: absolute; top: 18px; bottom: auto; left: calc(50% + 40px); width: calc(100% + var(--fgap) - 80px); height: 40px; transform: none; z-index: 1; background: no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M2 10 C 36 38, 84 38, 118 10' fill='none' stroke='%23B4924E' stroke-width='2.2' stroke-linecap='round' stroke-dasharray='1 9' opacity='0.75'/%3E%3C/svg%3E"); }
     .conn .cline { display: none; }
     .fstep:last-child .conn { display: none; }
   }
