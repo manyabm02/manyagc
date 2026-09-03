@@ -241,9 +241,20 @@ privacy, built on GooCampus's years of guiding professionals through their caree
 ## About the look
 
 A soft, romantic and elegant design — a warm ivory background, an oxblood-wine accent
-with a little antique gold, an elegant serif for the headings, delicate floral
-flourishes under each section, and a gentle zoom on the opening photo. It is
-deliberately different from the medical pages.
+with a little antique gold, delicate floral flourishes under each section, and a gentle
+zoom on the opening photo. It is deliberately different from the medical pages.
+
+**The lettering.** Two typefaces, set as the brand fonts:
+
+| | Font | Where it comes from |
+|---|---|---|
+| Headings, the **Samvaya** name, italic accents | **Bodoni Moda** | Google Fonts |
+| Body text, buttons, small labels | **Satoshi** | Fontshare |
+
+Two other brand fonts were supplied and are **not currently used**: **Manrope** (an
+alternative sans) and **Maharani**. Maharani is a licensed font that is not on any
+public font service — to use it, its `Maharani-Regular.woff2` and `Maharani-Italic.woff2`
+files would need to be added to this repository and loaded from here.
 
 **The photos.** The opening photo **fills the whole opening section, edge to edge**, with
 the words over it. The couple sit to the right, in the half with no writing, so their

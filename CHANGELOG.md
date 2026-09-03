@@ -4,6 +4,29 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.9 — August 2026 · The Samvaya brand fonts
+
+The **Samvaya** page now uses the brand typefaces:
+
+- **Bodoni Moda** for every heading, the Samvaya name and the italic accent lines
+- **Satoshi** for body text, buttons and the small labels
+
+Both load from public font services, so nothing needs uploading and the page still works
+as a single file.
+
+Bodoni sets noticeably larger and wider than the old face did at the same size, so the
+opening headline and its italic line came down a step to keep the intended scale, and
+the opening paragraph's column was narrowed a little — otherwise its longest line grew
+far enough right to touch the groom's sleeve again.
+
+**Two of the four fonts supplied are not in use.** **Manrope** is an alternative sans
+that would duplicate Satoshi's job. **Maharani** is a licensed font, and it is not
+available on any public font service — to use it, its two `.woff2` files would need to
+be added to this repository. Say the word and it can be wired up, most naturally for the
+Samvaya name itself.
+
+---
+
 ## Version 1.8 — August 2026 · Kept the soft fades off everyone's faces
 
 On the **Samvaya** page, all three photos fade into the page behind the words. On each
