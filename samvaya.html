@@ -148,17 +148,15 @@
        ivory, so it stays legible without putting a card back over the picture */
     .hero { display: block; min-height: 0; padding-bottom: 0; background: var(--ivory); }
     .hero-blur { display: none; }
-    /* Taller band than before. The photo is a wide 1800x997 with the couple sitting
-       right of centre, so a short band on a narrow screen crops them hard and leaves
-       them stranded to one side. Height tied to the viewport keeps the geometry the
-       same on every phone. */
-    .hero-sharp { position: relative; top: auto; right: auto; bottom: auto; width: 100%; height: clamp(340px, 102vw, 520px); -webkit-mask-image: none; mask-image: none; }
-    /* the phone band is far narrower than the wide photo, so it is framed on the couple
-       rather than the extended wall */
-    /* the couple's midpoint sits at ~73% across the photo; with the band height above,
-       this lands that midpoint on the centre of the screen */
-    .hero-sharp img { object-fit: cover; object-position: 99% 50%; }
-    .hero-sharp::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 52%, rgba(251,246,238,0.55) 80%, var(--ivory) 100%); }
+    /* Sampling the photo puts the couple across 44.4%-93.5% of its width, midpoint 69%.
+       Band height is what sets the zoom here (the fit is height-driven at this aspect),
+       so 90vw is chosen to pull them down to about 80% of the screen width with clear
+       margin either side, and 99% is the framing that then lands their midpoint on the
+       centre. Both terms follow the viewport, so it holds at any phone size. */
+    .hero-sharp { position: relative; top: auto; right: auto; bottom: auto; width: 100%; height: clamp(300px, 90vw, 470px); -webkit-mask-image: none; mask-image: none; }
+    /* origin centred so the slow zoom grows them in place rather than drifting them off
+       to one side as it does on the desktop crop */
+    .hero-sharp img { object-fit: cover; object-position: 99% 50%; transform-origin: 50% 50%; }
     .hero::after { display: none; }
     .hero-in { padding-top: 6px; padding-bottom: 34px; }
     .hero-panel { max-width: 100%; background: none; padding: 0; }

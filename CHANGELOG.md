@@ -6,14 +6,22 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ## Version 1.11 — September 2026 · The opening photo on phones
 
-On phones the opening photo sat in a band that was too short for it, so the couple were
-cropped tightly and pushed off to one side with empty wall beside them.
+On phones the opening photo was cropped too tightly — the couple filled the screen edge
+to edge, sat off to one side, and there was a pale glare washing across the bottom of
+the picture.
 
-The band is **taller now**, and the couple sit **centred** — with the joined hands and
-the ring back in view rather than cut off. Because the band's height follows the width
-of the screen, they stay centred on every phone size rather than only on one.
+Now:
 
-Nothing on desktop changed.
+- **The glare is gone.** It was a fade that blended the photo into the page below; the
+  photo simply ends cleanly.
+- **The couple are smaller**, taking about four fifths of the screen with clear space
+  either side, instead of running off both edges.
+- **They sit centred**, to within a pixel, with the joined hands and the ring in view.
+- **The slow zoom stays**, and now grows them in place rather than drifting them
+  sideways.
+
+Because both the band's height and the framing follow the width of the screen, this
+holds on every phone size rather than only on one. Nothing on desktop changed.
 
 ---
 
