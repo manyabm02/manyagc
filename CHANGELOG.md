@@ -17,8 +17,8 @@ Now:
 - **The couple are smaller**, taking about four fifths of the screen with clear space
   either side, instead of running off both edges.
 - **They sit centred**, to within a pixel, with the joined hands and the ring in view.
-- **The slow zoom stays**, and now grows them in place rather than drifting them
-  sideways.
+- **The slow zoom is switched off on phones.** The picture sits still there. The opening
+  photo on desktop still has it.
 
 Because both the band's height and the framing follow the width of the screen, this
 holds on every phone size rather than only on one. Nothing on desktop changed.

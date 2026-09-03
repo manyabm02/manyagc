@@ -154,9 +154,8 @@
        margin either side, and 99% is the framing that then lands their midpoint on the
        centre. Both terms follow the viewport, so it holds at any phone size. */
     .hero-sharp { position: relative; top: auto; right: auto; bottom: auto; width: 100%; height: clamp(300px, 90vw, 470px); -webkit-mask-image: none; mask-image: none; }
-    /* origin centred so the slow zoom grows them in place rather than drifting them off
-       to one side as it does on the desktop crop */
-    .hero-sharp img { object-fit: cover; object-position: 99% 50%; transform-origin: 50% 50%; }
+    /* no slow zoom on phones — the desktop hero keeps it, this one sits still */
+    .hero-sharp img { object-fit: cover; object-position: 99% 50%; animation: none; }
     .hero::after { display: none; }
     .hero-in { padding-top: 6px; padding-bottom: 34px; }
     .hero-panel { max-width: 100%; background: none; padding: 0; }
