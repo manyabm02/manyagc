@@ -241,6 +241,9 @@
        it was being sliced off — the couple cropped at the top and the bouquet at the
        bottom. A band as tall as it is wide shows the whole picture on a phone. */
     .bleed.light .bleed-media { height: min(100vw, 560px); }
+    /* the hosted-video photo is upright (760x1351), so showing all of it needs a band
+       ~1.78x the screen width — 64% of it was being cut at the old letterbox height */
+    .bleed:not(.light) .bleed-media { height: min(177.8vw, 780px); }
     /* the face window is a desktop-only device — the phone fade runs downward, clear of faces */
     .bleed-media::after, .bleed.light .bleed-media::after { background: linear-gradient(to bottom, transparent 34%, var(--sec-bg) 100%); -webkit-mask-image: none; mask-image: none; }
     .bleed:not(.light) .bleed-copy { margin-top: 0; margin-bottom: 0; }

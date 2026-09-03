@@ -18,9 +18,10 @@ of empty background above it, which made the picture look as though it began hal
 down. Everything below has moved up to close the gap. The same applies to the
 "hosted video" photo further down. Nothing on desktop changed.
 
-⚠️ The **"hosted video"** photo further down has the same problem, and worse — about two
-thirds of it is hidden on a phone. It was left alone for now because showing all of it
-would need a very tall band (it is a tall, upright picture). Worth deciding separately.
+The **"hosted video"** photo further down had the same fault, and worse — about two
+thirds of it was hidden. It now shows in full as well. Because that one is a tall,
+upright picture, showing all of it means a taller band on the page: the whole scene is
+there — the man, the laptop, the person waving on screen and the lights behind.
 
 ---
 
