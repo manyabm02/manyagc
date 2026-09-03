@@ -270,23 +270,35 @@
   /* Step five — the heart beats. Two quick pulses and a rest, the way a real heartbeat
      falls, with a soft ring travelling out behind it on the first beat. Long pause
      between cycles so it draws the eye without nagging. */
-  .fstep:last-child .icoc { position: relative; }
-  .fstep:last-child .icoc svg { transform-origin: 50% 56%; animation: heartbeat 2.6s ease-in-out infinite; will-change: transform; }
-  .fstep:last-child .icoc::after { content: ""; position: absolute; inset: -1px; border-radius: 50%; border: 1px solid var(--rose); opacity: 0; animation: heartring 2.6s ease-out infinite; pointer-events: none; }
+  /* The ring is a box-shadow, not a positioned pseudo-element — an earlier version set
+     position:relative here and that overrode .fcard .icoc's absolute placement, which
+     knocked step five's icon out of line with the other four. Nothing here touches
+     layout now. The beat lands at ~83% of the cycle, which is when the travelling
+     current below arrives from step four. */
+  .fstep:last-child .icoc svg { transform-origin: 50% 56%; animation: heartbeat 4.5s ease-in-out infinite; will-change: transform; }
+  .fstep:last-child .icoc { animation: heartring 4.5s ease-out infinite; }
   @keyframes heartbeat {
-    0%, 30%, 100% { transform: scale(1); }
-    7%  { transform: scale(1.19); }
-    14% { transform: scale(1); }
-    21% { transform: scale(1.10); }
+    0%, 78%, 100% { transform: scale(1); }
+    83% { transform: scale(1.19); }
+    88% { transform: scale(1); }
+    92% { transform: scale(1.10); }
+    96% { transform: scale(1); }
   }
   @keyframes heartring {
-    0%   { transform: scale(1); opacity: 0.5; }
-    38%  { transform: scale(1.42); opacity: 0; }
-    100% { transform: scale(1.42); opacity: 0; }
+    0%, 80% { box-shadow: 0 0 0 0 rgba(201,138,142,0); }
+    84%     { box-shadow: 0 0 0 0 rgba(201,138,142,0.55); }
+    100%    { box-shadow: 0 0 0 18px rgba(201,138,142,0); }
+  }
+  /* the lit window crosses one arc in a fifth of the cycle, then parks off the right
+     edge until its turn comes round again */
+  @keyframes current {
+    0%   { -webkit-mask-position: -50% 0; mask-position: -50% 0; }
+    20%  { -webkit-mask-position: 150% 0; mask-position: 150% 0; }
+    100% { -webkit-mask-position: 150% 0; mask-position: 150% 0; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .fstep:last-child .icoc svg { animation: none; }
-    .fstep:last-child .icoc::after { display: none; }
+    .fstep:last-child .icoc svg, .fstep:last-child .icoc, .conn::before { animation: none; }
+    .conn::before { display: none; }
   }
   @media (max-width: 760px) {
     .fstep { justify-content: center; margin-bottom: 60px; }
@@ -320,6 +332,20 @@
     .conn { position: absolute; top: 18px; bottom: auto; left: calc(50% + 40px); width: calc(100% + var(--fgap) - 80px); height: 40px; transform: none; z-index: 1; background: no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M2 10 C 36 38, 84 38, 118 10' fill='none' stroke='%23B4924E' stroke-width='2.2' stroke-linecap='round' stroke-dasharray='1 9' opacity='0.75'/%3E%3C/svg%3E"); }
     .conn .cline { display: none; }
     .fstep:last-child .conn { display: none; }
+    /* A current runs the arcs in turn — step 1 to 2, then 2 to 3, and so on — arriving
+       at Meet Your Match exactly as the heart beats. It is the same arc redrawn in wine,
+       revealed through a narrow moving window, so only a short lit segment shows at a
+       time. Each arc sweeps for a fifth of the cycle, then waits its turn again. */
+    .conn::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M2 10 C 36 38, 84 38, 118 10' fill='none' stroke='%237E2A38' stroke-width='2.8' stroke-linecap='round' stroke-dasharray='1 9'/%3E%3C/svg%3E");
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 28%, #000 50%, rgba(0,0,0,0.35) 72%, transparent 100%);
+      mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 28%, #000 50%, rgba(0,0,0,0.35) 72%, transparent 100%);
+      -webkit-mask-size: 45% 100%; mask-size: 45% 100%;
+      -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+      animation: current 4.5s linear infinite; }
+    .fstep:nth-child(2) .conn::before { animation-delay: 0.9s; }
+    .fstep:nth-child(3) .conn::before { animation-delay: 1.8s; }
+    .fstep:nth-child(4) .conn::before { animation-delay: 2.7s; }
   }
   .flow-help { max-width: 740px; margin: clamp(42px,5vw,58px) auto 0; padding: 30px 32px; border-radius: 16px; background: var(--cream); border: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; position: relative; z-index: 1; }
   .flow-help h3 { font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: 1.42rem; margin-bottom: 2px; }

@@ -18,9 +18,14 @@ On screens narrower than about 1280px the **original stacked layout still runs**
 columns simply cannot hold three lines each below that width, so the stacked version is
 the better read there.
 
-**Step five now has a heartbeat.** The heart gives two quick pulses and then rests, the
-way a real heartbeat falls, with a soft ring travelling outwards on the first beat. It
-is deliberately unhurried, and it stops for anyone whose device is set to reduce motion.
+**The steps now carry a current.** A lit pulse travels along the dotted curve from step
+one to step two, then two to three, and on down the line — and the moment it reaches
+**Meet Your Match**, the heart beats. Two quick pulses and a rest, the way a real
+heartbeat falls, with a soft ring spreading outwards.
+
+The whole sequence takes four and a half seconds and then begins again, so it draws the
+eye without ever becoming busy. It stops entirely for anyone whose device is set to
+reduce motion.
 
 ---
 
