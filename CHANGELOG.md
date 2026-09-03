@@ -4,6 +4,21 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.12 — September 2026 · The sunset photo on phones
+
+On phones the **"Your field, or beyond it"** photo was being sliced — over a third of it
+was hidden, cutting the couple at the top and the bouquet at the bottom. The picture is
+square, but it was sitting in a wide letterbox band.
+
+The band is now as tall as it is wide, so **the whole photograph shows** — the couple,
+the pier and the bouquet complete. Nothing on desktop changed.
+
+⚠️ The **"hosted video"** photo further down has the same problem, and worse — about two
+thirds of it is hidden on a phone. It was left alone for now because showing all of it
+would need a very tall band (it is a tall, upright picture). Worth deciding separately.
+
+---
+
 ## Version 1.11 — September 2026 · The opening photo on phones
 
 On phones the opening photo was cropped too tightly — the couple filled the screen edge

@@ -233,6 +233,10 @@
   @media (max-width: 900px) {
     /* the nudge is a desktop-only fix — on phones the photo is a full-width band */
     .bleed-media, .bleed.light .bleed-media { position: relative; left: 0; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(240px, 44vw, 340px); }
+    /* the sunset photo is square (860x860) but the band above is a letterbox, so 36% of
+       it was being sliced off — the couple cropped at the top and the bouquet at the
+       bottom. A band as tall as it is wide shows the whole picture on a phone. */
+    .bleed.light .bleed-media { height: min(100vw, 560px); }
     /* the face window is a desktop-only device — the phone fade runs downward, clear of faces */
     .bleed-media::after, .bleed.light .bleed-media::after { background: linear-gradient(to bottom, transparent 34%, var(--sec-bg) 100%); -webkit-mask-image: none; mask-image: none; }
     .bleed:not(.light) .bleed-copy { margin-top: 0; margin-bottom: 0; }
