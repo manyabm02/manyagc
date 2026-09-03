@@ -11,7 +11,12 @@ was hidden, cutting the couple at the top and the bouquet at the bottom. The pic
 square, but it was sitting in a wide letterbox band.
 
 The band is now as tall as it is wide, so **the whole photograph shows** — the couple,
-the pier and the bouquet complete. Nothing on desktop changed.
+the pier and the bouquet complete.
+
+**The photo also starts at the very top of its section now.** There used to be a strip
+of empty background above it, which made the picture look as though it began halfway
+down. Everything below has moved up to close the gap. The same applies to the
+"hosted video" photo further down. Nothing on desktop changed.
 
 ⚠️ The **"hosted video"** photo further down has the same problem, and worse — about two
 thirds of it is hidden on a phone. It was left alone for now because showing all of it

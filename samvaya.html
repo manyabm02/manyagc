@@ -232,6 +232,10 @@
   .bleed-copy p .ik { color: var(--ink); font-weight: 500; }
   @media (max-width: 900px) {
     /* the nudge is a desktop-only fix — on phones the photo is a full-width band */
+    /* on phones the photo is the first thing in the section, so the section's 70px top
+       padding left a band of empty background above it. Dropped, so the picture starts
+       flush at the top of its section and everything below moves up with it. */
+    .bleed { padding-top: 0; }
     .bleed-media, .bleed.light .bleed-media { position: relative; left: 0; width: 100vw; margin-left: calc(50% - 50vw); height: clamp(240px, 44vw, 340px); }
     /* the sunset photo is square (860x860) but the band above is a letterbox, so 36% of
        it was being sliced off — the couple cropped at the top and the bouquet at the
