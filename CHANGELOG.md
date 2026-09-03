@@ -4,6 +4,19 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.11 — September 2026 · The opening photo on phones
+
+On phones the opening photo sat in a band that was too short for it, so the couple were
+cropped tightly and pushed off to one side with empty wall beside them.
+
+The band is **taller now**, and the couple sit **centred** — with the joined hands and
+the ring back in view rather than cut off. Because the band's height follows the width
+of the screen, they stay centred on every phone size rather than only on one.
+
+Nothing on desktop changed.
+
+---
+
 ## Version 1.10 — September 2026 · The five steps, side by side
 
 **"How love will find your way" is being trialled as a horizontal row** — the five
