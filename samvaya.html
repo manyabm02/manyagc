@@ -391,6 +391,9 @@
   .foot-col a { display: block; font-size: 0.9rem; color: rgba(251,246,238,0.75); margin-bottom: 8px; transition: color .2s; }
   .foot-col a:hover { color: var(--rose); }
   .foot-bottom { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(251,246,238,0.12); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 0.78rem; color: rgba(251,246,238,0.42); }
+  /* the same drawn heart as the hero, not the emoji — but in ivory, because the hero's
+     wine against this near-black maroon footer measures 1.8:1 and all but disappears */
+  .foot-bottom .hrt { width: 13px; height: 13px; color: var(--ivory); vertical-align: -0.16em; }
 
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
   .reveal.in { opacity: 1; transform: none; }
@@ -614,7 +617,7 @@
         <div class="foot-col"><h4>Get in touch</h4><a href="mailto:hello@samvayamatrimony.com">hello@samvayamatrimony.com</a><a href="https://apply.samvayamatrimony.com" target="_blank" rel="noopener">Join the waitlist</a></div>
       </div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Samvaya Matrimony · A GooCampus initiative</span><span>Made with ❤️ by GooCampus</span></div>
+    <div class="foot-bottom"><span>© 2026 Samvaya Matrimony · A GooCampus initiative</span><span>Made with <svg class="hrt" viewBox="0 0 24 24" role="img" aria-label="love"><path d="M12 21s-7-4.5-9-8.5C1.5 8.5 4 5 7.5 5 10 5 12 7 12 7s2-2 4.5-2C20 5 22.5 8.5 21 12.5 19 16.5 12 21 12 21z" fill="currentColor"/></svg> by GooCampus</span></div>
   </div>
 </footer>
 

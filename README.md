@@ -276,8 +276,10 @@ one; the photo now softens into flat ivory instead.
 **The flowers.** Two hand-drawn botanical marks — a small sprig and a rose spray — sit
 quietly in the empty corners of six sections, plus a pair of flowering branches either
 side of "Samvaya means coming together". They are faint and deliberately spread out.
-The heart in "Made with ❤️ by GooCampus" is drawn in the same wine as the Samvaya
-wordmark above it, not the standard emoji.
+"Made with ❤️ by GooCampus" appears twice, and both hearts are drawn rather than the
+standard emoji, so their colour can be controlled. At the top it is the same wine as the
+Samvaya wordmark above it. In the footer it is **white** — that footer is a near-black
+maroon, and the wine heart against it would all but disappear.
 
 **On phones** the opening photo becomes a band across the top with the words below it,
 and the other two photos become full-width bands that fade into the page. On laptops
