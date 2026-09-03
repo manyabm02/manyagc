@@ -18,10 +18,10 @@ of empty background above it, which made the picture look as though it began hal
 down. Everything below has moved up to close the gap. The same applies to the
 "hosted video" photo further down. Nothing on desktop changed.
 
-The **"hosted video"** photo further down had the same fault, and worse — about two
-thirds of it was hidden. It now shows in full as well. Because that one is a tall,
-upright picture, showing all of it means a taller band on the page: the whole scene is
-there — the man, the laptop, the person waving on screen and the lights behind.
+The **"hosted video"** photo further down now sits in a **matching square frame**. That
+one is a tall, upright picture, so a square shows part of it rather than all of it — it
+is framed on the middle, where the man, the laptop and the person waving on screen all
+are. It is not blown up to fill the square; it is the same size, in a shorter frame.
 
 ---
 
