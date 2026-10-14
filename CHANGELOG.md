@@ -4,6 +4,23 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.13 — October 2026 · New page: AMC Orientation Workshop, Bengaluru
+
+A new landing page, **`amc-workshop.html`**, for the one-day, face-to-face Australia AMC
+Pathway workshop with Dr KP Balan on **Saturday, 19th December 2026** in Bengaluru.
+
+- **Booking:** every "Reserve My Seat", "Get Clarity" and "Register Now" button opens a
+  short details form first. The details are saved to the Google Sheet
+  "Australia AMC Workshop - Bengaluru" with **Payment status: Pending**, and the visitor
+  then goes to the Razorpay payment page (₹2,500 + 18% GST) with their name, email and
+  phone filled in.
+- **Content:** speaker profile, workshop details, the pathway steps, the agenda, pricing,
+  seven FAQs, and four edited video testimonials and photos from the 2025 workshop.
+- **Files:** the photos, videos and white GooCampus logo are in a new **`amc-assets/`**
+  folder, which has to stay next to the page.
+
+---
+
 ## Version 1.12 — September 2026 · The sunset photo on phones
 
 On phones the **"Your field, or beyond it"** photo was being sliced — over a third of it

@@ -11,12 +11,14 @@ and its own separate web address. They are not connected to each other.
 | **New Zealand Medical PG Pathway Handbook** | **https://manyabm02.github.io/manyagc/nz-handbook.html** |
 | **Gulf (GCC) Medical Licensing Programme** — *draft* | **https://manyabm02.github.io/manyagc/gcc-landing.html** |
 | **Samvaya Matrimony** — *draft* | **https://manyabm02.github.io/manyagc/samvaya.html** |
+| **AMC Orientation Workshop, Bengaluru (19th Dec 2026)** | **https://manyabm02.github.io/manyagc/amc-workshop.html** |
 
 The site is also live on **Netlify** (auto-deploys from this repo):
 - Career Strategy Session — https://goocampus-medical-pg.netlify.app/
 - NZ Handbook — https://goocampus-medical-pg.netlify.app/nz-handbook.html
 - Gulf (GCC) Programme — https://goocampus-medical-pg.netlify.app/gcc-landing.html
 - Samvaya Matrimony — https://goocampus-medical-pg.netlify.app/samvaya.html
+- AMC Workshop — https://goocampus-medical-pg.netlify.app/amc-workshop.html
 
 Anyone with these links can open them, on phone or laptop. They're public.
 
@@ -69,6 +71,8 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 | `nz-handbook.html` | The **New Zealand Handbook** page — shown at `/nz-handbook.html`. |
 | `gcc-landing.html` | The **Gulf (GCC) Programme** page — shown at `/gcc-landing.html`. Still a draft. |
 | `samvaya.html` | The **Samvaya Matrimony** page — shown at `/samvaya.html`. Still a draft. |
+| `amc-workshop.html` | The **AMC Orientation Workshop** page — shown at `/amc-workshop.html`. |
+| `amc-assets/` | The photos, testimonial videos and white logo used by the AMC Workshop page. It must stay next to `amc-workshop.html`. |
 | `report-data.js` | Holds the report PDF used for the **view-only preview** on the Career Strategy page. It loads only when a visitor scrolls down to the report section. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
@@ -301,3 +305,70 @@ the couple sits on the right with the words to the left.
 
 2. **The waitlist link needs confirming.** Every "Join Waitlist" button points to
    `apply.samvayamatrimony.com` — check that address is live and correct.
+
+---
+
+# Page 5 — AMC Orientation Workshop, Bengaluru
+
+The landing page for the **Australia AMC Pathway one-day, face-to-face workshop** with
+Dr KP Balan, an Emergency Medicine Registrar practising in Australia.
+
+**Live at:** https://manyabm02.github.io/manyagc/amc-workshop.html
+**File:** `amc-workshop.html` (with the `amc-assets/` folder)
+
+## What's on the page
+
+1. **Opening section** — "Australia AMC Pathway Face-to-Face Workshop in Bengaluru by a
+   Practising Australian Physician", over a slowly zooming Sydney Harbour photo
+2. **We're back · 2026 Edition** — two rows of photos from last year's workshop that
+   scroll slowly across the screen
+3. **Your Speaker** — Dr KP Balan's photo and credentials
+4. **Workshop Details** — date, time, venue and fee
+5. **A clear pathway / Why attend?** — the eight pathway steps and what you get from the day
+6. **Holding back?** — the common worries, and the "Get Clarity" button
+7. **Agenda for the Day** — the sessions, breaks and Q&A
+8. **Back by demand, for a third consecutive year** — the numbers, a photo gallery and
+   four video testimonials
+9. **What you'll walk away with**
+10. **Pricing** — what's included and the fee
+11. **Frequently Asked Questions** — seven questions
+12. **Closing section + footer** — "Register Now", office address, phone, email and social links
+
+## The key details on the page
+
+| | |
+|---|---|
+| **Date and time** | Saturday, 19th December 2026, 9:30 AM – 5:30 PM |
+| **Venue** | GooCampus Edu Solutions Office, 138/6, Ground Floor, 10th Main Road, 6th-A Cross, Sadashivanagar, near SBI Bank, Raj Mahal Vilas Extension, Bengaluru – 560080 |
+| **Price shown** | ₹2,500 + 18% GST (₹2,950 on the payment page) |
+| **Payment page** | https://rzp.io/rzp/oNPrFcuS (Razorpay) |
+| **Registrations saved to** | The Google Sheet "Australia AMC Workshop - Bengaluru", tab **Registrations** |
+| **Phone / WhatsApp shown** | +91 7483524515 |
+| **Email shown** | info@goocampus.in |
+
+## How booking works
+
+Every "Reserve My Seat", "Get Clarity" and "Register Now" button opens a short form first:
+first name, last name, contact number, email ID, city and current medical career stage
+(all required). When it's sent:
+
+1. The details are added as a new row in the Google Sheet, with **Payment status: Pending**.
+2. The visitor is taken to the Razorpay payment page, with their name, email and phone
+   already filled in.
+
+When someone pays on Razorpay, set their **Payment status** to **Paid** in the sheet
+(it turns green). The sheet is connected through a small Google Apps Script attached to
+it; its code is not in this repository.
+
+**Keep the Apps Script deployment as it is.** Making a *new* deployment gives a new web
+address and the form stops saving. If the script ever needs changing, use
+**Deploy → Manage deployments → Edit → New version**, which keeps the same address.
+
+**The form only saves on the real website** (GitHub Pages or Netlify). Preview copies on
+claude.ai can't send to Google Sheets, so details entered there are not saved.
+
+## About the look
+
+Black, charcoal and white, with rounded "pill" labels and soft wave dividers between
+sections, following a Dribbble workshop-page reference. The photos and videos are real,
+from the 2025 workshop; only the Sydney Harbour photo is a stock image.
