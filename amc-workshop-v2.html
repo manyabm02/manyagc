@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AMC Workshop Bengaluru 2026</title>
+<meta name="description" content="A one-day, in-person AMC Pathway workshop with Dr KP Balan, Emergency Medicine Registrar in Australia. Saturday, 19th December 2026, Sadashivanagar, Bengaluru. Fee ₹2,500 + 18% GST.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout concept: an orange, grain-textured hero led by the workshop title in a big condensed type
+     face, then white sections built from numbered badge + pill labels, navy headings that
+     stay one colour, outlined stat cards, numbered rows and an orange-card accordion; closes on an
+     orange band and a charcoal footer. Single light theme by design. */
+  :root{
+    --orange:#DF5329;
+    --orange-soft:#E9744F;
+    --navy:#13235B;
+    --ink:#2F2F2F;
+    --line:#E6E6E6;
+    --card:#EDEFF3;
+    --pill:#EFEFEF;
+    --charcoal:#1E1E1E;
+    --charcoal-2:#2D2D2D;
+    --white:#FFFFFF;
+    --display:'Anton', 'Arial Narrow', Impact, sans-serif;
+    --body:'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    --r:18px;
+    --wrap:1320px;
+    --gut:clamp(16px, 4vw, 64px);
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--white);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img,video{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  :focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+  section{scroll-margin-top:84px}
+  .grain{position:relative;background-color:var(--orange);isolation:isolate}
+  .grain::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;pointer-events:none;opacity:.22;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* ---------- pill buttons with arrow circle (the reference's main control) ---------- */
+  .pbtn{display:inline-flex;align-items:center;gap:14px;padding:6px 6px 6px 24px;border-radius:999px;font-size:15px;font-weight:500;background:var(--white);color:var(--charcoal);white-space:nowrap;transition:transform .2s ease, box-shadow .2s ease}
+  .pbtn .ic{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--orange);color:var(--white);flex:0 0 42px;transition:transform .25s ease}
+  .pbtn .ic svg{width:15px;height:15px}
+  .pbtn:hover{box-shadow:0 10px 24px rgba(19,35,91,.16)}
+  .pbtn:hover .ic{transform:rotate(45deg)}
+  .pbtn.orange{background:var(--orange);color:var(--white)}
+  .pbtn.orange .ic{background:var(--white);color:var(--charcoal)}
+  .pbtn.dark{background:var(--charcoal);color:var(--white)}
+  .pbtn.dark .ic{background:var(--orange);color:var(--white)}
+
+  /* ---------- numbered badge + pill label ---------- */
+  .label{display:flex;align-items:center;gap:8px;margin-bottom:26px}
+  .label .num{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--orange);color:var(--white);font-size:13px;font-weight:500}
+  .label .tx{display:inline-flex;align-items:center;height:46px;padding:0 20px;border-radius:999px;background:var(--pill);font-size:13px;color:#444}
+
+  /* ---------- headings: one solid navy colour ---------- */
+  .h2{font-weight:500;font-size:clamp(28px, 3.1vw, 44px);line-height:1.22;color:var(--navy);letter-spacing:-.015em;text-wrap:balance}
+  .lead{font-size:17px;color:#4A4A4A;line-height:1.65;max-width:62ch}
+  .body{font-size:15px;color:var(--ink);line-height:1.75}
+
+  /* ---------- nav ---------- */
+  .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:60}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:86px}
+  .logo img{height:58px;width:auto}
+  .nav ul{display:flex;gap:40px;list-style:none;font-size:15px;color:var(--white)}
+  .nav ul a{opacity:.92}
+  .nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+  .nav-r{display:flex;align-items:center;gap:22px}
+  .nav-r .sep{width:1px;height:28px;background:rgba(255,255,255,.55)}
+  .nav-r .when{color:var(--white);font-size:13px;line-height:1.3;text-align:right;opacity:.92}
+
+  /* ---------- hero ---------- */
+  .hero{overflow:hidden;background-image:linear-gradient(180deg, rgba(223,83,41,.42) 0%, rgba(223,83,41,.5) 50%, rgba(223,83,41,.8) 100%), url("amc-assets/photos/hero-classroom.jpg");background-size:cover;background-position:center 40%}
+  .hero-stage{padding-block:clamp(56px, 8vw, 128px) clamp(56px, 6vw, 96px)}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:var(--white);font-size:13px;font-weight:500;margin-bottom:18px}
+  .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--white)}
+  .hero-stage{text-align:center}
+  .hero h1{color:var(--white);font-weight:400;margin-bottom:clamp(28px, 3.2vw, 44px)}
+  .hero h1 .h1-big{display:block;font-family:var(--display);text-transform:uppercase;font-size:clamp(60px, 13vw, 190px);line-height:.9;letter-spacing:.01em;text-shadow:0 6px 30px rgba(90,25,5,.25)}
+  .hero h1 .h1-sub{display:block;text-shadow:0 2px 14px rgba(90,25,5,.35);font-family:var(--body);font-weight:500;font-size:clamp(20px, 2.3vw, 34px);line-height:1.3;letter-spacing:-.01em;max-width:34ch;margin:clamp(14px, 1.8vw, 24px) auto 0;text-wrap:balance}
+  .hero h1 .nw{white-space:nowrap}
+  .hero-foot{display:flex;flex-direction:column;align-items:center;gap:24px}
+  .hero-foot p{text-shadow:0 1px 10px rgba(90,25,5,.4);color:rgba(255,255,255,.95);font-size:clamp(16px, 1.3vw, 18px);line-height:1.6;max-width:46ch}
+  .playbtn{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:54px;height:54px;border-radius:50%;background:var(--white);display:grid;place-items:center;color:var(--orange);box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .2s ease}
+  .playbtn svg{width:18px;height:18px;margin-left:3px}
+  .playbtn:hover{transform:scale(1.08)}
+  .played .playbtn{display:none}
+
+  /* ---------- 01 · we're back ---------- */
+  .about{padding-block:clamp(72px, 9vw, 120px)}
+  .about-head{margin-bottom:clamp(36px, 4vw, 56px)}
+  .about-head .h2{max-width:28ch}
+  .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px, 6vw, 96px);align-items:center}
+  .about-img{border-radius:var(--r);overflow:hidden;aspect-ratio:17/11}
+  .about-img img{width:100%;height:100%;object-fit:cover}
+  .about-info h3{font-size:18px;font-weight:600;color:var(--navy);margin-bottom:14px}
+  .venue{font-size:16px;color:var(--ink);line-height:1.6}
+  .venue .k{display:block;margin-bottom:4px}
+  .venue .k,.stat .k{font-size:12px;color:#777;text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+  .stats{display:grid;border:1px solid var(--line);border-radius:14px;padding:0 22px;margin:24px 0 28px}
+  .stat{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);min-width:0}
+  .stat:last-child{border-bottom:0}
+  .stat .k{flex:0 0 auto}
+  .stat .v{white-space:nowrap;font-size:17px;color:var(--navy);font-weight:500;line-height:1.3;text-align:right}
+  .stat .v small{font-size:14px;color:#666;font-weight:400}
+
+  /* marquee of last year's classroom photos */
+  .marquee{display:grid;gap:14px;margin-top:clamp(56px, 7vw, 96px)}
+  .mq-row{overflow:hidden}
+  .mq-track{display:flex;width:max-content;animation:mq 75s linear infinite}
+  .mq-row.rev .mq-track{animation-direction:reverse;animation-duration:85s}
+  .marquee:hover .mq-track{animation-play-state:paused}
+  .mq-track img{height:210px;width:300px;object-fit:cover;border-radius:16px;margin-right:14px;background:var(--card)}
+  @keyframes mq{to{transform:translateX(-50%)}}
+
+  /* ---------- 02 · speaker (event layout) ---------- */
+  .speaker{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .sp-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px, 6vw, 96px);align-items:center}
+  .sp-name{font-size:clamp(32px, 3.4vw, 48px);font-weight:500;color:var(--navy);line-height:1.15;margin-bottom:16px}
+  .sp-cred{list-style:none;display:grid;gap:6px;font-size:16px;color:var(--ink);margin-bottom:28px}
+  .sp-cred .m-only{display:none}
+  .rule{height:1px;background:var(--line);margin:40px 0 32px}
+  .cred-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .ccard{border-radius:16px;padding:20px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;background:var(--card);color:var(--navy)}
+  .ccard.or{color:var(--white);background-color:var(--orange)}
+  .ccard .ico{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:var(--white)}
+  .ccard.or .ico{background:var(--white);color:var(--orange)}
+  .ccard .ico svg{width:18px;height:18px}
+  .ccard p{font-size:16px;font-weight:500;line-height:1.35}
+  .sp-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:5/5.6;background:var(--card)}
+  .sp-photo > img{width:100%;height:100%;object-fit:cover}
+
+  /* ---------- 03 · pathway (numbered rows) ---------- */
+  .pathway{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .pw-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px, 6vw, 110px);align-items:start}
+  .pw-left .h2{margin-bottom:16px}
+  .pw-left .lead{margin-bottom:34px}
+  .pw-img{border-radius:var(--r);overflow:hidden;aspect-ratio:16/9.5}
+  .pw-img img{width:100%;height:100%;object-fit:cover}
+  .rows{list-style:none;border-top:2px solid var(--charcoal)}
+  .rows li{display:flex;align-items:center;gap:0;padding:20px 0;border-bottom:1px solid var(--line);font-size:16px;color:#444}
+  .rows li b{font-weight:600;color:var(--orange);margin-right:12px;font-variant-numeric:tabular-nums}
+  .bridge{margin-top:44px;font-size:clamp(22px, 2.2vw, 30px);line-height:1.3;color:var(--navy);font-weight:500;text-wrap:balance}
+
+  /* ---------- 04 · why attend (orange-card accordion + photo the height of the text) ---------- */
+  .why{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .why-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px, 6vw, 110px);align-items:stretch}
+  .why-img{position:relative;border-radius:var(--r);overflow:hidden;background:var(--card)}
+  .why-img img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;object-fit:cover}
+  .why-right .h2{margin-bottom:10px}
+  .why-right .lead{margin-bottom:20px}
+  .acc{display:grid}
+  .acc-item{border-bottom:1px solid var(--line)}
+  .acc-item > button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;text-align:left;font-size:16px;line-height:1.45;color:var(--navy)}
+  .acc-item > button .pm{flex:0 0 18px;width:18px;height:18px;position:relative}
+  .acc-item > button .pm::before,.acc-item > button .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.6px;background:#555;transform:translate(-50%,-50%)}
+  .acc-item > button .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+  .acc-body{display:none}
+  .acc-item.on{border-bottom:0;margin-bottom:10px}
+  .acc-item.on > button{display:none}
+  .acc-item.on .acc-body{display:block;position:relative;overflow:hidden;border-radius:16px;padding:26px 24px;color:var(--white)}
+  .acc-body p{font-size:clamp(18px, 1.6vw, 22px);line-height:1.4;max-width:30ch;position:relative;z-index:1}
+  .acc-body .blob{position:absolute;right:-60px;bottom:-80px;width:220px;height:220px;border-radius:50%;background:var(--orange-soft);opacity:.75}
+
+  /* ---------- holding back ---------- */
+  .worries{padding-block:clamp(72px, 9vw, 120px);background:#F6F7F9}
+  .wr-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(32px, 6vw, 110px);align-items:start}
+  .wr-left .h2{margin-bottom:16px}
+  .wr-left .lead{margin-bottom:30px}
+  .qlist{list-style:none;display:grid;gap:12px}
+  .qlist li{display:flex;align-items:center;gap:16px;line-height:1.45;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-size:16px;color:var(--navy)}
+  .qlist .q{flex:0 0 34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--pill);color:var(--orange);font-weight:600}
+  .closing{margin-top:28px;border-left:2px solid var(--orange);padding-left:20px;font-size:16px;line-height:1.75;color:var(--ink);margin-bottom:28px}
+
+  /* ---------- 05 · agenda ---------- */
+  .agenda{padding-block:clamp(72px, 9vw, 120px)}
+  .ag-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px, 6vw, 110px);align-items:start}
+  .ag-left{position:sticky;top:120px}
+  .ag-left .h2{margin-bottom:18px}
+  .ag-left .lead{margin-bottom:28px}
+  .ag-list{list-style:none;border-top:2px solid var(--charcoal)}
+  .ag-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}
+  .ag-list .n{font-size:16px;font-weight:600;color:var(--orange);font-variant-numeric:tabular-nums;line-height:1.45}
+  .ag-list h4{font-size:17px;font-weight:500;color:var(--navy);margin-bottom:4px}
+  .ag-list p{font-size:15px;color:#555;line-height:1.6}
+  .ag-list li.brk{padding:12px 0;align-items:center;background:#F6F7F9;border-bottom:1px solid var(--line)}
+  .ag-list li.brk p{font-size:14px;color:#666;display:flex;align-items:center;gap:8px}
+  .ag-list li.brk svg{flex:0 0 16px;width:16px;height:16px;color:var(--orange)}
+  .ag-list li.brk .n{padding-left:10px}
+
+  /* ---------- 06 · back by demand ---------- */
+  .demand{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .dm-head{margin-bottom:40px}
+  .dm-head .h2{margin-bottom:16px}
+  .nstats{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:16px;margin-bottom:44px}
+  .nstat{border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;align-items:center;gap:16px;min-width:0}
+  .nstat b{font-size:clamp(28px, 2.6vw, 36px);font-weight:500;color:var(--navy);line-height:1;flex:0 0 auto}
+  .nstat span{font-size:14px;color:#555;line-height:1.5}
+  .nstat .stars{display:block;color:var(--orange);letter-spacing:2px;font-size:15px}
+  .bento{display:grid;grid-template-columns:repeat(4, minmax(0,1fr));grid-auto-rows:190px;gap:14px;margin-bottom:clamp(64px, 8vw, 104px)}
+  .bento img{width:100%;height:100%;object-fit:cover;border-radius:16px;background:var(--card)}
+  .bento img.big{grid-column:span 2;grid-row:span 2}
+  .tm-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+  .vids{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:22px}
+  .vcard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;background:#24140f}
+  .vcard video{width:100%;height:100%;object-fit:cover}
+  .vcap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 4px 0}
+  .vcap b{font-weight:500;color:var(--navy);font-size:17px}
+  .vcap span{font-size:14px;color:#666}
+
+  /* ---------- 07 · walk away (event cards) ---------- */
+  .walk{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .walk .h2{margin-bottom:34px}
+  .wcards{display:grid;grid-template-columns:repeat(5, minmax(0,1fr));gap:16px}
+  .wcard{border-radius:16px;padding:20px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;background:var(--card);color:var(--navy)}
+  .wcard.or{color:var(--white);background-color:var(--orange)}
+  .wcard .ico{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:var(--white)}
+  .wcard.or .ico{background:var(--white);color:var(--orange)}
+  .wcard .ico svg{width:18px;height:18px}
+  .wcard p{font-size:16px;font-weight:500;line-height:1.4}
+  .br3{display:none}
+
+  /* ---------- 08 · pricing ---------- */
+  .pricing{padding-block:clamp(72px, 9vw, 120px);border-top:1px solid var(--line)}
+  .pr-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px, 6vw, 110px);align-items:start}
+  .pr-left .h2{margin-bottom:18px}
+  .pr-meta{list-style:none;display:grid;gap:4px;font-size:16px;color:var(--ink)}
+  .pr-card{position:relative;overflow:hidden;border-radius:20px;padding:clamp(24px, 3vw, 36px);color:var(--white);container-type:inline-size}
+  .pr-card .blob{position:absolute;right:-70px;bottom:-90px;width:260px;height:260px;border-radius:50%;background:var(--orange-soft);opacity:.7}
+  .pr-card h3{font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;opacity:.85;margin-bottom:16px;position:relative}
+  .incl{list-style:none;display:grid;gap:10px;margin-bottom:28px;position:relative}
+  .incl li{display:flex;gap:12px;align-items:center;font-size:16px;font-size:max(10.5px, min(16px, calc((100cqi - 32px) / 25)));line-height:1.45;white-space:nowrap}
+  .incl svg{flex:0 0 20px;width:20px;height:20px}
+  .price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.35);padding-top:22px;margin-bottom:22px;position:relative}
+  .price b{font-size:clamp(40px, 4vw, 54px);font-weight:500;line-height:1}
+  .price span{font-size:15px;opacity:.9}
+  .pr-card .pbtn{position:relative}
+
+  /* ---------- 09 · FAQs ---------- */
+  .faq{padding-block:clamp(72px, 9vw, 120px);background:#F6F7F9}
+  .fq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px, 6vw, 110px);align-items:start}
+  .faq details{border-bottom:1px solid #DCDCDC}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 4px;font-size:17px;color:var(--navy)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .pm{flex:0 0 18px;width:18px;height:18px;position:relative}
+  .faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.6px;background:#555;transform:translate(-50%,-50%)}
+  .faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+  .faq details[open] summary .pm::after{display:none}
+  .faq details[open]{background:var(--white);border:1px solid var(--line);border-radius:16px;margin:8px 0}
+  .faq details[open] summary{padding:20px 22px 10px}
+  .faq .ans{padding:0 22px 22px;font-size:16px;color:#555;line-height:1.7;max-width:64ch}
+
+  /* ---------- final orange band ---------- */
+  .final{padding-block:clamp(48px, 5vw, 64px)}
+  .fn-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px, 4vw, 64px);align-items:stretch}
+  .fn-photo{position:relative;border-radius:18px;overflow:hidden;min-height:440px;background:#c99}
+  .fn-photo > img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;object-fit:cover}
+  .rev-pill{position:absolute;z-index:2;left:18px;top:18px;display:flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:999px;background:rgba(80,80,80,.5);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--white)}
+  .rev-pill .fa{display:flex}
+  .rev-pill .fa img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.8);margin-left:-10px}
+  .rev-pill .fa img:first-child{margin-left:0}
+  .rev-pill b{display:block;font-size:14px;font-weight:500;line-height:1.1}
+  .rev-pill small{font-size:11px;opacity:.85}
+  .fn-card{background:var(--white);border-radius:18px;padding:clamp(28px, 4vw, 64px);display:flex;flex-direction:column;justify-content:center}
+  .fn-card .h2{margin-bottom:24px}
+  .fn-card .closing{margin-top:0;margin-bottom:34px}
+  .fn-btns{display:flex;flex-wrap:wrap;gap:12px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--charcoal);color:#CFCFCF}
+  .ft-grid{display:grid;grid-template-columns:1.1fr .9fr 1fr 1fr;gap:clamp(28px, 4vw, 56px);padding-block:56px 44px}
+  .ft-brand img{height:58px;width:auto;margin-bottom:18px}
+  .ft-brand p{font-size:14px;line-height:1.7;max-width:36ch;margin-bottom:26px}
+  .ft-h{font-size:16px;color:var(--white);font-weight:500;margin-bottom:12px}
+  .ft-social{display:flex;flex-wrap:wrap;gap:12px 22px;font-size:14px}
+  .ft-social a{display:inline-flex;align-items:center;gap:6px}
+  .ft-social a:hover,.ft-col a:hover{color:var(--white)}
+  .ft-social svg{width:11px;height:11px}
+  .ft-pills{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+  .ft-pills a{padding:8px 16px;border-radius:999px;background:var(--charcoal-2);font-size:13px;color:#DADADA}
+  .ft-pills a:hover{background:#3a3a3a}
+  .ft-col p{font-size:14px;line-height:1.7;margin-bottom:24px}
+  .ft-card{position:relative;border-radius:16px;overflow:hidden;min-height:250px}
+  .ft-card img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;object-fit:cover}
+  .ft-card .pbtn{position:absolute;left:14px;right:14px;bottom:14px;justify-content:space-between}
+  .ft-bot{border-top:1px solid #2c2c2c;padding-block:22px;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* ---------- booking form (light version of the same form) ---------- */
+  .modal{margin:auto;border:0;padding:0;background:transparent;width:calc(100% - 32px);max-width:560px}
+  .modal::backdrop{background:rgba(19,35,91,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+  .modal form{position:relative;display:grid;gap:15px;background:var(--white);color:var(--ink);border-radius:22px;padding:34px 30px 26px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;-webkit-overflow-scrolling:touch}
+  .modal-title{font-size:28px;font-weight:500;color:var(--navy);padding-right:40px;line-height:1.2}
+  .modal-sub{font-size:14px;color:#666;margin-top:-8px}
+  .modal-req{font-size:13px;color:#777;margin-top:-4px}
+  .req{color:var(--orange);font-weight:600}
+  .modal label{display:grid;gap:7px;font-size:14px;color:var(--navy);font-weight:500}
+  .modal input,.modal select{height:50px;width:100%;background:var(--white);border:1.5px solid #DADDE3;border-radius:12px;color:var(--ink);font:inherit;font-weight:400;font-size:16px;padding:0 15px;outline:none}
+  .modal input::placeholder{color:#A0A4AC}
+  .modal input:focus,.modal select:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(223,83,41,.15)}
+  .modal select{-webkit-appearance:none;appearance:none;padding-right:42px;background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center/18px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .row2 label{min-width:0}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .form-msg{font-size:14px;color:#C2381B}
+  .form-msg:empty{display:none}
+  .modal-go{width:100%;justify-content:space-between}
+  .modal-go:disabled{opacity:.75;cursor:progress}
+  .pay-fallback{display:block;text-align:center;font-size:15px;color:var(--orange);text-decoration:underline;text-underline-offset:3px}
+  .pay-fallback[hidden]{display:none}
+  .modal-note{font-size:13px;color:#888;text-align:center}
+  .modal-x{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;background:var(--pill);color:var(--navy);font-size:22px;line-height:1}
+  .modal-fallback{position:fixed;top:0;right:0;bottom:0;left:0;z-index:200;display:grid;place-items:center;width:100%;max-width:none;background:rgba(19,35,91,.45);padding:16px}
+  .modal-fallback form{width:100%;max-width:560px}
+
+  /* ---------- load + scroll motion ---------- */
+  .hero-anim{transition:transform .9s cubic-bezier(.2,.8,.2,1), opacity .9s ease}
+  .hero h1.hero-anim{transition-delay:.08s}
+  .hero-foot.hero-anim{transition-delay:.18s}
+  .pre .hero-anim{transform:translateY(24px);opacity:0}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .mq-track{animation:none}
+    .mq-row{overflow-x:auto}
+    .hero-anim{transition:none}
+    .pre .hero-anim{transform:none;opacity:1}
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1100px){
+    .nav ul{display:none}
+    .wcards{grid-template-columns:repeat(3, minmax(0,1fr))}
+  }
+  @media (max-width:900px){
+    .nav-r .when,.nav-r .sep{display:none}
+    .about-grid,.sp-grid,.pw-grid,.why-grid,.wr-grid,.ag-grid,.pr-grid,.fq-grid,.fn-grid{grid-template-columns:minmax(0,1fr)}
+    .ag-left{position:static}
+    .sp-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+    .sp-info{display:contents}
+    .sp-info > .label{order:1}
+    .sp-photo{order:2;margin-bottom:28px}
+    .sp-info > :not(.label){order:3}
+    .sp-info > .cred-cards{order:4;margin-bottom:28px}
+    .sp-info > .pbtn{order:5}
+    .sp-info > .rule{display:none}
+    .sp-cred{margin-bottom:24px}
+    .why-img img{position:static;display:block;width:100%;height:auto}
+    .nstats{grid-template-columns:minmax(0,1fr)}
+    .bento{grid-template-columns:repeat(2, minmax(0,1fr));grid-auto-rows:140px}
+    .ft-grid{grid-template-columns:1fr 1fr}
+    .ft-card{grid-column:1 / -1}
+  }
+  @supports not (width:1cqi){
+    .incl li{white-space:normal;align-items:flex-start}
+  }
+  @media (max-width:339px){
+    .incl li{white-space:normal;align-items:flex-start}
+    .ft-bot span:first-child{white-space:normal}
+  }
+  @media (max-width:640px){
+    .nav-in{height:72px}
+    .logo img{height:46px}
+    .nav .pbtn{padding:5px 5px 5px 16px;font-size:14px;gap:10px}
+    .nav .pbtn .ic{width:34px;height:34px;flex-basis:34px}
+    .pbtn{white-space:normal;text-align:left;line-height:1.3}
+    main .pbtn{display:flex;width:fit-content;max-width:100%;margin-inline:auto;text-align:center}
+    .ft-card .pbtn{left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:calc(100% - 28px)}
+    .pw-img{display:none}
+    .ft-bot span{white-space:nowrap;font-size:max(10.5px, min(13px, calc((100vw - 32px) / 30.5)))}
+    .pr-card{padding:24px 14px}
+    .incl li{gap:8px;font-size:max(10.5px, min(16px, calc((100cqi - 24px) / 25)))}
+    .incl svg{flex-basis:16px;width:16px;height:16px}
+    .ag-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
+    .ag-left{display:contents}
+    .ag-left > .label{order:1}
+    .ag-left > .h2{order:2;margin-bottom:22px}
+    .ag-list{order:3}
+    .ag-left > .lead{order:4;margin:24px 0}
+    .ag-left > .pbtn{order:5}
+    .pw-left .lead{margin-bottom:8px}
+    .sp-cred{background-color:var(--orange);color:var(--white);border-radius:16px;padding:18px 14px;gap:8px}
+    .sp-cred .m-only{display:list-item}
+    .sp-info > .cred-cards{display:none}
+    .sp-cred li{white-space:nowrap;font-size:min(16px, calc((100vw - 60px) / 24))}
+    .about-head .h2{font-size:min(24px, calc((100vw - 32px) * .068));line-height:1.32;text-wrap:pretty}
+    .about-head .h2 .nw{white-space:nowrap}
+    .stats{padding:0 16px}
+    .stat .v{font-size:min(16px, calc((100vw - 32px) * .047))}
+    .stat .v small{font-size:.85em}
+    .mq-track img{height:150px;width:214px;border-radius:14px}
+    .cred-cards{grid-template-columns:minmax(0,1fr)}
+    .ccard{min-height:0;padding:16px;gap:12px}
+    .ccard p{white-space:nowrap;letter-spacing:-.005em;font-size:min(16px, calc((100vw - 64px) / 23))}
+    .ag-list li{grid-template-columns:36px minmax(0,1fr)}
+    .vids{grid-template-columns:minmax(0,1fr)}
+    .wcards{grid-template-columns:minmax(0,1fr)}
+    .wcard{min-height:0}
+    .rows li{font-size:15px;padding:18px 0}
+    .fn-photo{min-height:320px}
+    .ft-grid{grid-template-columns:minmax(0,1fr)}
+    .row2{grid-template-columns:minmax(0,1fr)}
+    .modal form{padding:28px 20px 22px;gap:13px}
+    .modal-title{font-size:24px}
+  }
+  /* ---------- desktop-only adjustments (phone layout is final; leave it alone) ---------- */
+  @media (min-width:901px){
+    .sp-grid{align-items:stretch}
+    .sp-info{display:flex;flex-direction:column;justify-content:center}
+    .sp-info > .pbtn{align-self:flex-start;margin-top:28px}
+    .rule{margin:4px 0 24px}
+    .ccard{min-height:0;padding:16px clamp(14px, 1.25vw, 18px);gap:12px}
+    .ccard .ico{width:32px;height:32px}
+    .ccard .ico svg{width:16px;height:16px}
+    .ccard p{font-size:clamp(13px, 1.05vw, 15px);line-height:1.35;text-wrap:balance}
+    .sp-photo{aspect-ratio:auto;min-height:420px}
+    .sp-photo > img{position:absolute;top:0;right:0;bottom:0;left:0;object-position:center 20%}
+    .wr-grid,.ag-grid,.pr-grid,.fq-grid{align-items:center}
+    .ag-left{position:static}
+    .wcard{padding:20px clamp(16px, 1.3vw, 20px)}
+    .wcard p{font-size:clamp(14.5px, 1.18vw, 16px);text-wrap:balance}
+  }
+  @media (min-width:1141px){
+    .br3{display:inline}
+  }
+  @media (min-width:901px) and (max-width:1140px){
+    .wcards{grid-template-columns:repeat(3, minmax(0,1fr))}
+  }
+  @media (min-width:901px) and (max-width:1060px){
+    .cred-cards{grid-template-columns:minmax(0,1fr);gap:12px}
+    .ccard{flex-direction:row;align-items:center;justify-content:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></symbol>
+    <symbol id="cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8.5 5-3 5 3-1.5-8.5"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+    <symbol id="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+  </defs>
+</svg>
+
+<!-- ================= NAV ================= -->
+  <header class="nav grain">
+    <div class="wrap nav-in">
+      <a href="#top" class="logo" aria-label="GooCampus home"><img src="amc-assets/brand/goocampus-logo-white.png" alt="GooCampus" width="68" height="58"></a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#workshop">Workshop details</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </nav>
+      <div class="nav-r">
+        <span class="when">Saturday<br>19th December 2026</span>
+        <span class="sep" aria-hidden="true"></span>
+        <button type="button" data-register class="pbtn">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+  <!-- ================= HERO ================= -->
+  <section class="hero grain pre" id="hero">
+    <div class="wrap hero-stage">
+      <div class="eyebrow hero-anim"><i aria-hidden="true"></i>Planning your Australia AMC journey?</div>
+      <h1 class="hero-anim"><span class="h1-big">Australia</span><span class="h1-sub">AMC Pathway <span class="nw">Face-to-Face</span> Workshop in Bengaluru by a Practising Australian Physician</span></h1>
+      <div class="hero-foot hero-anim">
+        <p>Doctors, get complete clarity on the AMC pathway in a one-day face-to-face AMC workshop this December 2026.</p>
+        <button type="button" data-register class="pbtn">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= 01 · WE'RE BACK / WORKSHOP DETAILS ================= -->
+<section class="about" id="workshop">
+  <div class="wrap about-head">
+    <div class="label"><span class="num">01</span><span class="tx">We're back · 2026 Edition</span></div>
+    <h2 class="h2">We're back again this year with our Australia AMC Pathway <span class="nw">One-Day</span> Workshop, in person with Dr <span class="nw">KP Balan.</span></h2>
+  </div>
+  <div class="wrap about-grid">
+    <div class="about-img"><img src="amc-assets/photos/teaching-amc-portfolio.jpg" alt="Dr KP Balan teaching the steps for an AMC portfolio"></div>
+    <div class="about-info">
+      <h3>Face-to-face offline workshop</h3>
+      <p class="venue"><span class="k">Venue</span>GooCampus Edu Solutions Office, Sadashivanagar, Bengaluru</p>
+      <div class="stats">
+        <div class="stat"><span class="k">Date</span><span class="v">Saturday, 19th December 2026</span></div>
+        <div class="stat"><span class="k">Time</span><span class="v">9:30 AM – 5:30 PM</span></div>
+        <div class="stat"><span class="k">Fee</span><span class="v">₹2,500 <small>+ 18% GST</small></span></div>
+      </div>
+      <button type="button" data-register class="pbtn orange">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Photos from the 2025 workshop">
+    <div class="mq-row">
+      <div class="mq-track">
+        <img src="amc-assets/photos/teaching-amc-portfolio.jpg" alt="Dr KP Balan teaching the steps for an AMC portfolio">
+        <img src="amc-assets/photos/full-classroom.jpg" alt="The full room during Dr KP Balan's session">
+        <img src="amc-assets/photos/dr-kp-balan-presenting.jpg" alt="Dr KP Balan speaking to attendees">
+        <img src="amc-assets/photos/faq-session.jpg" alt="Dr KP Balan answering frequently asked questions">
+        <img src="amc-assets/photos/teaching-standard-pathway.jpg" alt="Dr KP Balan presenting the Australia Standard Pathway to the room">
+        <img src="amc-assets/photos/teaching-from-the-audience.jpg" alt="Dr KP Balan teaching, seen from the attendees' tables">
+      </div>
+    </div>
+    <div class="mq-row rev">
+      <div class="mq-track">
+        <img src="amc-assets/photos/classroom-discussion.jpg" alt="An attendee asking Dr KP Balan a question during the session">
+        <img src="amc-assets/photos/attendees-listening.jpg" alt="Doctors listening at the 2025 workshop">
+        <img src="amc-assets/photos/qa-at-the-tables.jpg" alt="Dr KP Balan answering questions at the attendees' tables">
+        <img src="amc-assets/photos/one-on-one-questions.jpg" alt="Attendees asking Dr KP Balan questions one-on-one">
+        <img src="amc-assets/photos/attendees-taking-notes.jpg" alt="Doctors taking notes during the session">
+        <img src="amc-assets/photos/networking-with-dr-kp-balan.jpg" alt="Attendees talking with Dr KP Balan">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 · YOUR SPEAKER ================= -->
+<section class="speaker" id="speaker">
+  <div class="wrap sp-grid">
+    <div class="sp-info">
+      <div class="label"><span class="num">02</span><span class="tx">Your Speaker</span></div>
+      <h2 class="sp-name">Dr KP Balan</h2>
+      <ul class="sp-cred">
+        <li>Emergency Medicine Registrar, Australia</li>
+        <li>Cleared AMC MCQ and Clinical in the first attempt</li>
+        <li>8+ years of work experience</li>
+        <li class="m-only">AMC MCQ and Clinical Tutor</li>
+        <li class="m-only">AMC recognised CPD Certified Course provider</li>
+      </ul>
+      <div class="rule"></div>
+      <div class="cred-cards">
+        <div class="ccard"><span class="ico"><svg><use href="#cap"/></svg></span><p>AMC MCQ and Clinical Tutor</p></div>
+        <div class="ccard or grain"><span class="ico"><svg><use href="#award"/></svg></span><p>AMC recognised CPD Certified Course provider</p></div>
+      </div>
+      <button type="button" data-register class="pbtn orange">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+    <div class="sp-photo">
+      <img src="amc-assets/photos/kp-balan.jpg" alt="Dr KP Balan">
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 · A CLEAR PATHWAY ================= -->
+<section class="pathway" id="why">
+  <div class="wrap pw-grid">
+    <div class="pw-left">
+      <div class="label"><span class="num">03</span><span class="tx">The AMC pathway</span></div>
+      <h2 class="h2">A clear pathway, with many steps to navigate</h2>
+      <p class="lead">Australia offers IMGs a straightforward pathway, but there are multiple steps to work through along the way:</p>
+      <div class="pw-img"><img src="amc-assets/photos/teaching-standard-pathway.jpg" alt="Dr KP Balan presenting the Australia Standard Pathway to the room"></div>
+    </div>
+    <div>
+      <ol class="rows">
+        <li><span><b>01.</b>EPIC verification</span></li>
+        <li><span><b>02.</b>AMC Portfolio account creation</span></li>
+        <li><span><b>03.</b>AMC MCQ and Clinical exams</span></li>
+        <li><span><b>04.</b>English language test</span></li>
+        <li><span><b>05.</b>Registration</span></li>
+        <li><span><b>06.</b>Job search</span></li>
+        <li><span><b>07.</b>CV and cover letter building</span></li>
+        <li><span><b>08.</b>Interview prep</span></li>
+      </ol>
+      <p class="bridge">But how do you know you're on the right track to reach your end goal?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · WHY ATTEND ================= -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div class="why-right">
+      <div class="label"><span class="num">04</span><span class="tx">Benefits</span></div>
+      <h2 class="h2">Why attend?</h2>
+      <p class="lead">What you'll get from the day</p>
+      <div class="acc" data-acc>
+        <div class="acc-item on"><button type="button" aria-expanded="true">How to plan and strategise your AMC pathway, step by step<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>How to plan and strategise your AMC pathway, step by step</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">What it really takes to clear the AMC MCQ and Clinical exams<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>What it really takes to clear the AMC MCQ and Clinical exams</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">The dedication and mindset needed to reach your end goal in Australia<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>The dedication and mindset needed to reach your end goal in Australia</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">Life beyond the exams: work culture, rosters, cost of living &amp; settling in with family<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>Life beyond the exams: work culture, rosters, cost of living &amp; settling in with family</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">Honest advice from someone who has been through the pathway herself<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>Honest advice from someone who has been through the pathway herself</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">Major challenges IMGs could face along the way, and how to prepare for them<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>Major challenges IMGs could face along the way, and how to prepare for them</p></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false">Live Q&amp;A with Dr KP Balan throughout the day<span class="pm" aria-hidden="true"></span></button>
+          <div class="acc-body grain"><span class="blob" aria-hidden="true"></span><p>Live Q&amp;A with Dr KP Balan throughout the day</p></div></div>
+      </div>
+    </div>
+    <div class="why-img"><img src="amc-assets/photos/full-classroom.jpg" alt="The full room during Dr KP Balan's session"></div>
+  </div>
+</section>
+
+<!-- ================= HOLDING BACK ================= -->
+<section class="worries">
+  <div class="wrap wr-grid">
+    <div class="wr-left">
+      <div class="label"><span class="num">05</span><span class="tx">Common worries</span></div>
+      <h2 class="h2">Holding back on starting your AMC journey?</h2>
+      <p class="lead">Many doctors put off starting the AMC pathway because of a few common worries:</p>
+    </div>
+    <div>
+      <ul class="qlist">
+        <li><span class="q" aria-hidden="true">?</span>What if I don't clear the exams?</li>
+        <li><span class="q" aria-hidden="true">?</span>What if I get stuck along the way?</li>
+        <li><span class="q" aria-hidden="true">?</span>What if the money I spend goes to waste?</li>
+        <li><span class="q" aria-hidden="true">?</span>I don't have time to prepare right now, so I'll start in a few months.</li>
+        <li><span class="q" aria-hidden="true">?</span>What if I don't know what it takes to become a doctor there?</li>
+      </ul>
+      <p class="closing">If you're asking yourself these questions and pushing your Australia plan further, this is the time to attend. Get clarity first, then move ahead with confidence.</p>
+      <button type="button" data-register class="pbtn orange">Get Clarity on 19th December 2026<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENDA ================= -->
+<section class="agenda" id="agenda">
+  <div class="wrap ag-grid">
+    <div class="ag-left">
+      <div class="label"><span class="num">06</span><span class="tx">Agenda for the Day</span></div>
+      <h2 class="h2">What we cover in one day</h2>
+      <p class="lead">Lunch and refreshments are included.</p>
+      <button type="button" data-register class="pbtn orange">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+    <ol class="ag-list">
+      <li><span class="n">01.</span><div><h4>Registration and welcome</h4><p>Check-in, introductions, what to expect from the day</p></div></li>
+      <li><span class="n">02.</span><div><h4>Introduction to Australia pathway</h4><p>What the Australian Medical Council does, who the pathway is for, and how registration in Australia works</p></div></li>
+      <li class="brk"><span class="n"></span><p><svg aria-hidden="true"><use href="#cup"/></svg>Tea break</p></li>
+      <li><span class="n">03.</span><div><h4>AMC steps, exams and strategy</h4><p>The routes available to IMGs and how each step of the pathway fits into one clear plan</p></div></li>
+      <li class="brk"><span class="n"></span><p><svg aria-hidden="true"><use href="#cup"/></svg>Lunch and networking · Meet fellow doctors on the same journey</p></li>
+      <li><span class="n">04.</span><div><h4>Exam prep strategy</h4><p>How the AMC MCQ and Clinical exams work, how to plan study time, and the mindset it takes</p></div></li>
+      <li class="brk"><span class="n"></span><p><svg aria-hidden="true"><use href="#cup"/></svg>Tea break</p></li>
+      <li><span class="n">05.</span><div><h4>Life beyond the exams</h4><p>Work culture, rosters, training, cost of living, settling in, and challenges IMGs face</p></div></li>
+      <li><span class="n">06.</span><div><h4>Q&amp;A Session</h4><p>Ask your doubts along the way</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= BACK BY DEMAND + TESTIMONIALS ================= -->
+<section class="demand" id="stories">
+  <div class="wrap">
+    <div class="dm-head">
+      <div class="label"><span class="num">07</span><span class="tx">Last year's edition</span></div>
+      <h2 class="h2">Back by demand, for a third consecutive year</h2>
+      <p class="lead">100+ doctors joined us in Bangalore over the last 2 years for a full day of face-to-face guidance on the AMC pathway with Dr KP Balan. This year, we're back with the same focus: practical, honest answers, in person.</p>
+    </div>
+    <div class="nstats">
+      <div class="nstat"><b>100+</b><span>doctors attended over the past&nbsp;2&nbsp;years</span></div>
+      <div class="nstat"><b>8+</b><span>years of expert guidance from a practising Australian doctor</span></div>
+      <div class="nstat"><b>5.0</b><span><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>rated by our attendees</span></div>
+    </div>
+    <div class="bento">
+      <img class="big" src="amc-assets/photos/group-photo.jpg" alt="Group photo of 2025 attendees at the GooCampus office" loading="lazy">
+      <img src="amc-assets/photos/attendees-engaged.jpg" alt="Attendees following the session" loading="lazy">
+      <img src="amc-assets/photos/dr-kp-balan-with-attendees.jpg" alt="Dr KP Balan talking with attendees" loading="lazy">
+      <img src="amc-assets/photos/certificate-handover.jpg" alt="Dr KP Balan presenting an attendee with her certificate" loading="lazy" style="object-position:center 42%">
+      <img src="amc-assets/photos/celebrating-together.jpg" alt="Dr KP Balan celebrating with attendees and the GooCampus team" loading="lazy">
+    </div>
+
+    <div class="tm-head" id="testimonials">
+      <h3 class="h2">What last year's attendees said</h3>
+    </div>
+    <div class="vids">
+      <figure>
+        <div class="vcard" data-video><video preload="none" playsinline poster="amc-assets/videos/dr-anisha.jpg"><source src="amc-assets/videos/dr-anisha.mp4" type="video/mp4"></video><button type="button" class="playbtn" aria-label="Play Dr Anusha's testimonial"><svg><use href="#play"/></svg></button></div>
+        <figcaption class="vcap"><b>Dr Anusha</b><span>AMC Workshop Bengaluru</span></figcaption>
+      </figure>
+      <figure>
+        <div class="vcard" data-video><video preload="none" playsinline poster="amc-assets/videos/dr-anshitha.jpg"><source src="amc-assets/videos/dr-anshitha.mp4" type="video/mp4"></video><button type="button" class="playbtn" aria-label="Play Dr Ranshitha's testimonial"><svg><use href="#play"/></svg></button></div>
+        <figcaption class="vcap"><b>Dr Ranshitha</b><span>Haryana · AMC Workshop Bengaluru</span></figcaption>
+      </figure>
+      <figure>
+        <div class="vcard" data-video><video preload="none" playsinline poster="amc-assets/videos/dr-sambud.jpg"><source src="amc-assets/videos/dr-sambud.mp4" type="video/mp4"></video><button type="button" class="playbtn" aria-label="Play Dr Sambud's testimonial"><svg><use href="#play"/></svg></button></div>
+        <figcaption class="vcap"><b>Dr Sambud</b><span>AMC Workshop Bengaluru</span></figcaption>
+      </figure>
+      <figure>
+        <div class="vcard" data-video><video preload="none" playsinline poster="amc-assets/videos/dr-keshav.jpg"><source src="amc-assets/videos/dr-keshav.mp4" type="video/mp4"></video><button type="button" class="playbtn" aria-label="Play Dr Keshav's testimonial"><svg><use href="#play"/></svg></button></div>
+        <figcaption class="vcap"><b>Dr Keshav</b><span>AMC Workshop Bengaluru</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT YOU'LL WALK AWAY WITH ================= -->
+<section class="walk">
+  <div class="wrap">
+    <div class="label"><span class="num">08</span><span class="tx">Outcomes</span></div>
+    <h2 class="h2">What you'll walk away with</h2>
+    <div class="wcards">
+      <div class="wcard"><span class="ico"><svg><use href="#spark"/></svg></span><p>A clear, step-by-step view of the AMC pathway</p></div>
+      <div class="wcard or grain"><span class="ico"><svg><use href="#spark"/></svg></span><p>A clear strategy on how to plan your AMC pathway</p></div>
+      <div class="wcard"><span class="ico"><svg><use href="#spark"/></svg></span><p>A realistic picture of AMC MCQ and Clinical preparation</p></div>
+      <div class="wcard or grain"><span class="ico"><svg><use href="#spark"/></svg></span><p>An honest view<br class="br3"> of work and life<br class="br3"> in Australia</p></div>
+      <div class="wcard"><span class="ico"><svg><use href="#spark"/></svg></span><p>Answers to your own questions from a doctor who has done it</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap pr-grid">
+    <div class="pr-left">
+      <div class="label"><span class="num">09</span><span class="tx">Pricing</span></div>
+      <h2 class="h2">AMC Orientation Workshop</h2>
+      <ul class="pr-meta">
+        <li>Saturday, 19th December 2026</li>
+        <li>9:30 AM – 5:30 PM, Bengaluru</li>
+      </ul>
+    </div>
+    <div class="pr-card grain">
+      <span class="blob" aria-hidden="true"></span>
+      <h3>Includes</h3>
+      <ul class="incl">
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Full-day, in-person workshop with Dr KP Balan</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Complete overview on the AMC pathway</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Live Q&amp;A and discussion with Dr KP Balan</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Insights on life and settling in Australia</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Networking with fellow doctors on the same journey</li>
+        <li><svg aria-hidden="true"><use href="#check"/></svg>Lunch and refreshments</li>
+      </ul>
+      <div class="price"><b>₹2,500</b><span>+ 18% GST</span></div>
+      <button type="button" data-register class="pbtn">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQS ================= -->
+<section class="faq" id="faqs">
+  <div class="wrap fq-grid">
+    <div>
+      <div class="label"><span class="num">10</span><span class="tx">FAQs</span></div>
+      <h2 class="h2">Frequently Asked Questions</h2>
+    </div>
+    <div>
+      <details open>
+        <summary>Is this workshop online or offline?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">It is an in-person workshop held in Bengaluru.</div>
+      </details>
+      <details>
+        <summary>Who is this workshop for?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Medical school students &amp; MBBS graduates who are exploring or already preparing for the AMC pathway to Australia.</div>
+      </details>
+      <details>
+        <summary>Do I need to have started AMC preparation?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">No. The day starts with an introduction to AMC, so beginners can follow along. Doctors already preparing will benefit from the exam prep and Q&amp;A sessions.</div>
+      </details>
+      <details>
+        <summary>Will this workshop help me clear the AMC exams?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">The workshop gives you orientation and direction on the pathway and preparation approach. It is not exam training.</div>
+      </details>
+      <details>
+        <summary>Is this workshop CPD certified?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">No. This workshop is not CPD certified. It is an overview session on the AMC pathway, not exam training or a certificate course.</div>
+      </details>
+      <details>
+        <summary>What should I bring?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">A notebook, your questions, and details of your qualification if you want pathway-specific guidance.</div>
+      </details>
+      <details>
+        <summary>Where exactly is the venue?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">GooCampus Edu Solutions Office, 138/6, Ground Floor, 10th Main Road, 6th-A Cross, Sadashivanagar, near SBI Bank, Raj Mahal Vilas Extension, Bengaluru – 560080.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA (orange band) ================= -->
+<section class="final grain">
+  <div class="wrap fn-grid">
+    <div class="fn-photo">
+      <img src="amc-assets/photos/dr-kp-balan-presenting.jpg" alt="Dr KP Balan speaking to attendees" loading="lazy">
+      <div class="rev-pill">
+        <span class="fa" aria-hidden="true"><img src="amc-assets/videos/dr-anisha.jpg" alt=""><img src="amc-assets/videos/dr-sambud.jpg" alt=""><img src="amc-assets/videos/dr-keshav.jpg" alt=""></span>
+        <span><b>100+</b><small>doctors attended</small></span>
+      </div>
+    </div>
+    <div class="fn-card">
+      <h2 class="h2">Your Australia plan starts with the right information</h2>
+      <p class="closing">Spend one Saturday getting clarity on the AMC pathway from a doctor who works in the system.</p>
+      <div class="fn-btns">
+        <button type="button" data-register class="pbtn orange">Register Now · 19th December, Bengaluru<span class="ic"><svg><use href="#arr"/></svg></span></button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <img src="amc-assets/brand/goocampus-logo-white.png" alt="GooCampus" width="68" height="58">
+      <p>GooCampus Edu Solutions Pvt Ltd</p>
+      <div class="ft-h">Social media</div>
+      <div class="ft-social">
+        <a href="https://www.instagram.com/goocampus/" target="_blank" rel="noopener">Instagram<svg aria-hidden="true"><use href="#ext"/></svg></a>
+        <a href="https://www.youtube.com/@goocampus" target="_blank" rel="noopener">YouTube<svg aria-hidden="true"><use href="#ext"/></svg></a>
+        <a href="https://in.linkedin.com/company/gocampus-in" target="_blank" rel="noopener">LinkedIn<svg aria-hidden="true"><use href="#ext"/></svg></a>
+      </div>
+    </div>
+    <div class="ft-pills">
+      <a href="#top">Home</a>
+      <a href="#workshop">Workshop details</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faqs">FAQs</a>
+    </div>
+    <div class="ft-col">
+      <div class="ft-h">Address</div>
+      <p>GooCampus Edu Solutions Office, 138/6, Ground Floor, 10th Main Road, 6th-A Cross, Sadashivanagar, near SBI Bank, Raj Mahal Vilas Extension, Bengaluru – 560080</p>
+      <div class="ft-h">Phone / WhatsApp</div>
+      <p><a href="tel:+917483524515">+91 7483524515</a></p>
+      <div class="ft-h">Email</div>
+      <p><a href="mailto:info@goocampus.in">info@goocampus.in</a></p>
+    </div>
+    <div class="ft-card">
+      <img src="amc-assets/photos/faq-session.jpg" alt="Dr KP Balan answering frequently asked questions" loading="lazy">
+      <button type="button" data-register class="pbtn">Reserve My Seat<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    </div>
+  </div>
+  <div class="wrap ft-bot"><span>© 2026 GooCampus Edu Solutions Pvt Ltd. All rights reserved.</span><span>AMC Workshop · Bengaluru · 19th December 2026</span></div>
+</footer>
+
+<!-- ================= BOOKING FORM (opens from any "Reserve My Seat" button) ================= -->
+<dialog id="reserve" class="modal" aria-labelledby="reserve-title">
+  <form id="reserveForm" novalidate>
+    <button type="button" class="modal-x" aria-label="Close" data-close>×</button>
+    <h3 id="reserve-title" class="modal-title">Reserve your seat</h3>
+    <p class="modal-sub">AMC Workshop · Saturday, 19th December 2026 · Bengaluru</p>
+    <p class="modal-req">Please answer all questions. Fields marked <span class="req">*</span> are required.</p>
+    <div class="row2">
+      <label for="f-first"><span class="lbl">First name <span class="req">*</span></span><input id="f-first" name="first_name" autocomplete="given-name" required></label>
+      <label for="f-last"><span class="lbl">Last name <span class="req">*</span></span><input id="f-last" name="last_name" autocomplete="family-name" required></label>
+    </div>
+    <label for="f-phone"><span class="lbl">Contact number <span class="req">*</span></span><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required></label>
+    <label for="f-email"><span class="lbl">Email ID <span class="req">*</span></span><input id="f-email" name="email" type="email" autocomplete="email" required></label>
+    <label for="f-city"><span class="lbl">City <span class="req">*</span></span><input id="f-city" name="city" autocomplete="address-level2" placeholder="Which city are you from?" required></label>
+    <label for="f-stage"><span class="lbl">Current medical career stage <span class="req">*</span></span>
+      <select id="f-stage" name="stage" required>
+        <option value="">Choose one</option>
+        <option>MBBS 1st Year</option>
+        <option>MBBS 2nd Year</option>
+        <option>MBBS 3rd Year</option>
+        <option>MBBS 4th Year</option>
+        <option>MBBS 5th Year</option>
+        <option>Internship</option>
+        <option>MBBS Graduate (internship completed)</option>
+        <option>FMG – FMGE passed</option>
+        <option>FMG – FMGE not yet passed</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="form-msg" role="alert"></p>
+    <button type="submit" class="pbtn orange modal-go">Continue to payment<span class="ic"><svg><use href="#arr"/></svg></span></button>
+    <a class="pay-fallback" target="_blank" rel="noopener" hidden>Payment page didn't open? Tap here to pay</a>
+    <p class="modal-note">Next, you'll pay ₹2,500 + 18% GST on our secure Razorpay page.</p>
+  </form>
+</dialog>
+
+<script>
+  // ================= BOOKING SETTINGS (same as the first version) =================
+  // Every booking button opens the details form. The form saves the details to the Google Sheet
+  // "Australia AMC Workshop - Bengaluru", then takes the visitor to the Razorpay payment page.
+  var COLLECT_DETAILS_FIRST = true;
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwEqPamI6f-yNQjSI4hADYKnrP0n7p9zsMP4WDCqs7m6IwebkCj6Y6O8_a2C0Rhz463/exec';
+  var PAYMENT_URL = 'https://pages.razorpay.com/pl_TnjHpKxCayfipw/view'; // full address of https://rzp.io/rzp/oNPrFcuS
+
+  (function(){
+    var dlg = document.getElementById('reserve');
+    var buttons = document.querySelectorAll('[data-register]');
+    if (!COLLECT_DETAILS_FIRST) {
+      buttons.forEach(function(b){ b.addEventListener('click', function(){ window.location.href = 'https://rzp.io/rzp/oNPrFcuS'; }); });
+      return;
+    }
+    var form = document.getElementById('reserveForm');
+    var msg = form.querySelector('.form-msg');
+    var go = form.querySelector('.modal-go');
+    var goLabel = go.firstChild;
+    var embedded = window.self !== window.top;
+    var native = typeof dlg.showModal === 'function';
+
+    function openForm(){
+      msg.textContent = '';
+      if (native) { if (!dlg.open) dlg.showModal(); }
+      else { dlg.setAttribute('open', ''); dlg.classList.add('modal-fallback'); document.body.style.overflow = 'hidden'; }
+      if (window.matchMedia('(min-width: 761px)').matches) form.elements.first_name.focus();
+    }
+    function closeForm(){
+      if (native) dlg.close();
+      else { dlg.removeAttribute('open'); dlg.classList.remove('modal-fallback'); document.body.style.overflow = ''; }
+    }
+    buttons.forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); openForm(); }); });
+    dlg.addEventListener('click', function(e){ if (e.target === dlg || e.target.hasAttribute('data-close')) closeForm(); });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var f = form.elements;
+      var first = f.first_name.value.trim(), last = f.last_name.value.trim();
+      var email = f.email.value.trim(), city = f.city.value.trim(), stage = f.stage.value;
+      var phone = f.phone.value.replace(/[^\d+]/g, '');
+      var problem =
+        !first ? 'Please enter your first name.' :
+        !last ? 'Please enter your last name.' :
+        phone.replace(/\D/g, '').length < 10 ? 'Please enter a valid contact number.' :
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? 'Please enter a valid email ID.' :
+        !city ? 'Please enter your city.' :
+        !stage ? 'Please choose your current medical career stage.' : '';
+      if (problem) { msg.textContent = problem; return; }
+      if (f.website.value) return;
+      msg.textContent = '';
+      go.disabled = true;
+      goLabel.textContent = 'Taking you to payment…';
+
+      var pay = PAYMENT_URL + (PAYMENT_URL.indexOf('?') < 0 ? '?' : '&') +
+                'full_name=' + encodeURIComponent(first + ' ' + last) +
+                '&email=' + encodeURIComponent(email) +
+                '&phone=' + encodeURIComponent(phone.replace(/\D/g, '').slice(-10));
+      var fallback = form.querySelector('.pay-fallback');
+      fallback.href = pay;
+      var data = new URLSearchParams({ first_name: first, last_name: last, phone: phone, email: email, city: city, stage: stage, website: '' });
+      var save = SHEET_URL
+        ? fetch(SHEET_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: data })
+        : Promise.resolve();
+
+      if (embedded) {
+        save.catch(function(){});
+        fallback.click();
+        fallback.hidden = false;
+        goLabel.textContent = 'Details saved';
+        return;
+      }
+      var left = false;
+      function next(){
+        if (left) return;
+        left = true;
+        window.location.href = pay;
+        setTimeout(function(){ fallback.hidden = false; goLabel.textContent = 'Details saved'; }, 3000);
+      }
+      save.then(next, next);
+      setTimeout(next, 4000);
+    });
+  })();
+
+  // ================= PAGE BEHAVIOUR =================
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Hero entrance: the title and its intro rise in
+  (function(){ function go(){ var h = document.getElementById('hero'); if (h) h.classList.remove('pre'); } requestAnimationFrame(function(){ requestAnimationFrame(go); }); setTimeout(go, 400); })();
+
+  // Photo rows: duplicate once so the scroll loops without a gap
+  document.querySelectorAll('.mq-track').forEach(function(track){
+    [].slice.call(track.children).forEach(function(img){
+      var c = img.cloneNode(true); c.alt = ''; c.setAttribute('aria-hidden', 'true'); track.appendChild(c);
+    });
+  });
+
+  // Accordion: one point open at a time, shown as the orange card
+  (function(){
+    var acc = document.querySelector('[data-acc]'); if (!acc) return;
+    var items = [].slice.call(acc.querySelectorAll('.acc-item'));
+    function show(n){
+      items.forEach(function(it, i){ it.classList.toggle('on', i === n); it.firstElementChild.setAttribute('aria-expanded', i === n ? 'true' : 'false'); });
+    }
+    items.forEach(function(it, i){ it.firstElementChild.addEventListener('click', function(){ show(i); }); });
+  })();
+
+  // Video cards: tap the play button to play with controls
+  document.querySelectorAll('[data-video]').forEach(function(box){
+    var v = box.querySelector('video'), b = box.querySelector('.playbtn');
+    b.addEventListener('click', function(){
+      document.querySelectorAll('[data-video] video').forEach(function(o){ if (o !== v) o.pause(); });
+      box.classList.add('played'); v.controls = true; v.play();
+    });
+  });
+</script>
+</body>
+</html>

@@ -4,6 +4,22 @@ A plain-English history of the GooCampus landing pages. Newest updates go at the
 
 ---
 
+## Version 1.14 — October 2026 · New page: AMC Workshop, second version
+
+A second design of the AMC Workshop page, **`amc-workshop-v2.html`**. It has the same
+content and the same booking flow as the first version, in a new orange design. The first
+version (`amc-workshop.html`) is unchanged and still live.
+
+- **Opening section:** a big **AUSTRALIA** headline over a tinted photo of last year's
+  classroom, with the workshop title and "Reserve My Seat" button below.
+- **Booking:** the same details form, Google Sheet and Razorpay payment page as version 1.
+- **Phones:** every booking button is small and centred, Dr KP Balan's credentials sit
+  together in one box, and the key lines fit on a single line.
+- **Files:** two new photos in `amc-assets/photos/`: `hero-classroom.jpg` (the opening
+  background) and `kp-balan.jpg` (the speaker photo).
+
+---
+
 ## Version 1.13 — October 2026 · New page: AMC Orientation Workshop, Bengaluru
 
 A new landing page, **`amc-workshop.html`**, for the one-day, face-to-face Australia AMC

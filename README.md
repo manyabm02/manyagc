@@ -12,6 +12,7 @@ and its own separate web address. They are not connected to each other.
 | **Gulf (GCC) Medical Licensing Programme** — *draft* | **https://manyabm02.github.io/manyagc/gcc-landing.html** |
 | **Samvaya Matrimony** — *draft* | **https://manyabm02.github.io/manyagc/samvaya.html** |
 | **AMC Orientation Workshop, Bengaluru (19th Dec 2026)** | **https://manyabm02.github.io/manyagc/amc-workshop.html** |
+| **AMC Orientation Workshop — second version** | **https://manyabm02.github.io/manyagc/amc-workshop-v2.html** |
 
 The site is also live on **Netlify** (auto-deploys from this repo):
 - Career Strategy Session — https://goocampus-medical-pg.netlify.app/
@@ -19,6 +20,7 @@ The site is also live on **Netlify** (auto-deploys from this repo):
 - Gulf (GCC) Programme — https://goocampus-medical-pg.netlify.app/gcc-landing.html
 - Samvaya Matrimony — https://goocampus-medical-pg.netlify.app/samvaya.html
 - AMC Workshop — https://goocampus-medical-pg.netlify.app/amc-workshop.html
+- AMC Workshop, second version — https://goocampus-medical-pg.netlify.app/amc-workshop-v2.html
 
 Anyone with these links can open them, on phone or laptop. They're public.
 
@@ -72,7 +74,8 @@ box and the closing section — opens the Razorpay payment page in a new tab.
 | `gcc-landing.html` | The **Gulf (GCC) Programme** page — shown at `/gcc-landing.html`. Still a draft. |
 | `samvaya.html` | The **Samvaya Matrimony** page — shown at `/samvaya.html`. Still a draft. |
 | `amc-workshop.html` | The **AMC Orientation Workshop** page — shown at `/amc-workshop.html`. |
-| `amc-assets/` | The photos, testimonial videos and white logo used by the AMC Workshop page. It must stay next to `amc-workshop.html`. |
+| `amc-workshop-v2.html` | The **second version** of the AMC Workshop page (orange design) — shown at `/amc-workshop-v2.html`. |
+| `amc-assets/` | The photos, testimonial videos and white logo used by both AMC Workshop pages. It must stay next to them. |
 | `report-data.js` | Holds the report PDF used for the **view-only preview** on the Career Strategy page. It loads only when a visitor scrolls down to the report section. |
 | `README.md` | This file. |
 | `CHANGELOG.md` | A plain-English history of what's changed. |
@@ -372,3 +375,46 @@ claude.ai can't send to Google Sheets, so details entered there are not saved.
 Black, charcoal and white, with rounded "pill" labels and soft wave dividers between
 sections, following a Dribbble workshop-page reference. The photos and videos are real,
 from the 2025 workshop; only the Sydney Harbour photo is a stock image.
+
+---
+
+# Page 6 — AMC Orientation Workshop, Bengaluru (second version)
+
+A second design of the AMC Workshop page, with **the same content and the same booking
+form** as Page 5, in an orange design based on a Dribbble sports-event page reference.
+Both versions are live; this one does not replace the first.
+
+**Live at:** https://manyabm02.github.io/manyagc/amc-workshop-v2.html
+**File:** `amc-workshop-v2.html` (with the `amc-assets/` folder)
+
+## What's on the page
+
+1. **Opening section:** big **AUSTRALIA**, then "AMC Pathway Face-to-Face Workshop in
+   Bengaluru by a Practising Australian Physician", over a tinted photo of last year's
+   classroom
+2. **01 We're back · 2026 Edition:** venue, a Date / Time / Fee box, and two rows of
+   scrolling photos from last year
+3. **02 Your Speaker:** Dr KP Balan's photo, credentials and two credential cards
+4. **03 The AMC pathway:** the eight steps
+5. **04 Why attend?:** the points open one at a time as an orange card, beside a classroom photo
+6. **05 Common worries:** the "Holding back?" questions and the "Get Clarity" button
+7. **06 Agenda for the Day:** the sessions, tea breaks and lunch
+8. **07 Last year's edition:** the numbers, a photo gallery and four video testimonials
+9. **08 Outcomes:** "What you'll walk away with"
+10. **09 Pricing:** what's included and the fee
+11. **10 FAQs:** seven questions
+12. **Closing section + footer**
+
+## Booking and key details
+
+Exactly the same as Page 5: every booking button opens the details form, the details go
+to the Google Sheet "Australia AMC Workshop - Bengaluru" with **Payment status: Pending**,
+and the visitor then goes to the Razorpay page (₹2,500 + 18% GST). The same rules apply.
+Keep the Apps Script deployment as it is, and the form only saves on the real website.
+
+## About the look
+
+Orange (#DF5329) with a light grain texture, navy headings, numbered section labels and
+rounded "pill" buttons. On phones every booking button is small and centred.
+
+**The phone layout has been signed off.** Make any further design changes for desktop only.
